@@ -1,0 +1,440 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FE4E7A4429C4B2AD00325835 /* WatchtowerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4E7A4329C4B2AD00325835 /* WatchtowerApp.swift */; };
+		FE4E7A4829C4B2AE00325835 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE4E7A4729C4B2AE00325835 /* Assets.xcassets */; };
+		FE4E7A4B29C4B2AE00325835 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE4E7A4A29C4B2AE00325835 /* Preview Assets.xcassets */; };
+		FE9B8AAF29CC86670084BD24 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9B8AAE29CC86670084BD24 /* LoginView.swift */; };
+		FE9B8AB129CC86710084BD24 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9B8AB029CC86710084BD24 /* LoginViewModel.swift */; };
+		FE9B8AB329CC867C0084BD24 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9B8AB229CC867C0084BD24 /* LoginModel.swift */; };
+		FE9B8AB729CCC1830084BD24 /* PrimaryActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9B8AB629CCC1830084BD24 /* PrimaryActionButton.swift */; };
+		FE9B8ABC29CCC52F0084BD24 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9B8ABB29CCC52F0084BD24 /* Color.swift */; };
+		FE9B8AC029CCC6380084BD24 /* LoginWithAppleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9B8ABF29CCC6380084BD24 /* LoginWithAppleButton.swift */; };
+		FE9B8AC429CCCC370084BD24 /* BackgroundCastleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9B8AC329CCCC370084BD24 /* BackgroundCastleView.swift */; };
+		FE9B8AC629CCCC980084BD24 /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9B8AC529CCCC980084BD24 /* LogoView.swift */; };
+		FE9B8AC829CCCD190084BD24 /* SecondaryActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9B8AC729CCCD190084BD24 /* SecondaryActionButton.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FE4E7A4029C4B2AD00325835 /* Watchtower.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Watchtower.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE4E7A4329C4B2AD00325835 /* WatchtowerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchtowerApp.swift; sourceTree = "<group>"; };
+		FE4E7A4729C4B2AE00325835 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FE4E7A4A29C4B2AE00325835 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FE9B8AAE29CC86670084BD24 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		FE9B8AB029CC86710084BD24 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		FE9B8AB229CC867C0084BD24 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		FE9B8AB629CCC1830084BD24 /* PrimaryActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryActionButton.swift; sourceTree = "<group>"; };
+		FE9B8ABB29CCC52F0084BD24 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		FE9B8ABF29CCC6380084BD24 /* LoginWithAppleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWithAppleButton.swift; sourceTree = "<group>"; };
+		FE9B8AC329CCCC370084BD24 /* BackgroundCastleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundCastleView.swift; sourceTree = "<group>"; };
+		FE9B8AC529CCCC980084BD24 /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
+		FE9B8AC729CCCD190084BD24 /* SecondaryActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryActionButton.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FE4E7A3D29C4B2AD00325835 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FE4E7A3729C4B2AD00325835 = {
+			isa = PBXGroup;
+			children = (
+				FE4E7A4229C4B2AD00325835 /* Watchtower */,
+				FE4E7A4129C4B2AD00325835 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FE4E7A4129C4B2AD00325835 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FE4E7A4029C4B2AD00325835 /* Watchtower.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FE4E7A4229C4B2AD00325835 /* Watchtower */ = {
+			isa = PBXGroup;
+			children = (
+				FE9B8AAB29CC86330084BD24 /* App */,
+				FE9B8AB429CCC1680084BD24 /* Utils */,
+				FE9B8AAC29CC86430084BD24 /* Features */,
+				FE4E7A4729C4B2AE00325835 /* Assets.xcassets */,
+				FE4E7A4929C4B2AE00325835 /* Preview Content */,
+			);
+			path = Watchtower;
+			sourceTree = "<group>";
+		};
+		FE4E7A4929C4B2AE00325835 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FE4E7A4A29C4B2AE00325835 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FE9B8AAB29CC86330084BD24 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FE4E7A4329C4B2AD00325835 /* WatchtowerApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		FE9B8AAC29CC86430084BD24 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				FE9B8AAD29CC86550084BD24 /* Login */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		FE9B8AAD29CC86550084BD24 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				FE9B8AC229CCCC270084BD24 /* View */,
+				FE9B8AB029CC86710084BD24 /* LoginViewModel.swift */,
+				FE9B8AB229CC867C0084BD24 /* LoginModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		FE9B8AB429CCC1680084BD24 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FE9B8AB829CCC4450084BD24 /* Extensions */,
+				FE9B8AB529CCC16E0084BD24 /* UIComponents */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		FE9B8AB529CCC16E0084BD24 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				FE9B8AB629CCC1830084BD24 /* PrimaryActionButton.swift */,
+				FE9B8ABF29CCC6380084BD24 /* LoginWithAppleButton.swift */,
+				FE9B8AC729CCCD190084BD24 /* SecondaryActionButton.swift */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		FE9B8AB829CCC4450084BD24 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FE9B8ABB29CCC52F0084BD24 /* Color.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FE9B8AC129CCCC1C0084BD24 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				FE9B8AC329CCCC370084BD24 /* BackgroundCastleView.swift */,
+				FE9B8AC529CCCC980084BD24 /* LogoView.swift */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		FE9B8AC229CCCC270084BD24 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FE9B8AC129CCCC1C0084BD24 /* UIComponents */,
+				FE9B8AAE29CC86670084BD24 /* LoginView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FE4E7A3F29C4B2AD00325835 /* Watchtower */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE4E7A4E29C4B2AE00325835 /* Build configuration list for PBXNativeTarget "Watchtower" */;
+			buildPhases = (
+				FE4E7A3C29C4B2AD00325835 /* Sources */,
+				FE4E7A3D29C4B2AD00325835 /* Frameworks */,
+				FE4E7A3E29C4B2AD00325835 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Watchtower;
+			productName = Watchtower;
+			productReference = FE4E7A4029C4B2AD00325835 /* Watchtower.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FE4E7A3829C4B2AD00325835 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					FE4E7A3F29C4B2AD00325835 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = FE4E7A3B29C4B2AD00325835 /* Build configuration list for PBXProject "Watchtower" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FE4E7A3729C4B2AD00325835;
+			productRefGroup = FE4E7A4129C4B2AD00325835 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FE4E7A3F29C4B2AD00325835 /* Watchtower */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FE4E7A3E29C4B2AD00325835 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE4E7A4B29C4B2AE00325835 /* Preview Assets.xcassets in Resources */,
+				FE4E7A4829C4B2AE00325835 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FE4E7A3C29C4B2AD00325835 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE9B8AB329CC867C0084BD24 /* LoginModel.swift in Sources */,
+				FE9B8AC629CCCC980084BD24 /* LogoView.swift in Sources */,
+				FE9B8ABC29CCC52F0084BD24 /* Color.swift in Sources */,
+				FE9B8AB129CC86710084BD24 /* LoginViewModel.swift in Sources */,
+				FE9B8AC029CCC6380084BD24 /* LoginWithAppleButton.swift in Sources */,
+				FE9B8AAF29CC86670084BD24 /* LoginView.swift in Sources */,
+				FE9B8AC829CCCD190084BD24 /* SecondaryActionButton.swift in Sources */,
+				FE9B8AC429CCCC370084BD24 /* BackgroundCastleView.swift in Sources */,
+				FE4E7A4429C4B2AD00325835 /* WatchtowerApp.swift in Sources */,
+				FE9B8AB729CCC1830084BD24 /* PrimaryActionButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FE4E7A4C29C4B2AE00325835 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FE4E7A4D29C4B2AE00325835 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FE4E7A4F29C4B2AE00325835 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Watchtower/Preview Content\"";
+				DEVELOPMENT_TEAM = TF4K4YZ8PT;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fortresskit.Watchtower;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FE4E7A5029C4B2AE00325835 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Watchtower/Preview Content\"";
+				DEVELOPMENT_TEAM = TF4K4YZ8PT;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fortresskit.Watchtower;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FE4E7A3B29C4B2AD00325835 /* Build configuration list for PBXProject "Watchtower" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE4E7A4C29C4B2AE00325835 /* Debug */,
+				FE4E7A4D29C4B2AE00325835 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE4E7A4E29C4B2AE00325835 /* Build configuration list for PBXNativeTarget "Watchtower" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE4E7A4F29C4B2AE00325835 /* Debug */,
+				FE4E7A5029C4B2AE00325835 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FE4E7A3829C4B2AD00325835 /* Project object */;
+}
