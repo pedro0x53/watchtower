@@ -15,10 +15,10 @@
 		FE9B8AB329CC867C0084BD24 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9B8AB229CC867C0084BD24 /* LoginModel.swift */; };
 		FE9B8AB729CCC1830084BD24 /* PrimaryActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9B8AB629CCC1830084BD24 /* PrimaryActionButton.swift */; };
 		FE9B8ABC29CCC52F0084BD24 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9B8ABB29CCC52F0084BD24 /* Color.swift */; };
-		FE9B8AC029CCC6380084BD24 /* LoginWithAppleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9B8ABF29CCC6380084BD24 /* LoginWithAppleButton.swift */; };
 		FE9B8AC429CCCC370084BD24 /* BackgroundCastleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9B8AC329CCCC370084BD24 /* BackgroundCastleView.swift */; };
 		FE9B8AC629CCCC980084BD24 /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9B8AC529CCCC980084BD24 /* LogoView.swift */; };
 		FE9B8AC829CCCD190084BD24 /* SecondaryActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9B8AC729CCCD190084BD24 /* SecondaryActionButton.swift */; };
+		FE9B8ACE29D099110084BD24 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9B8ACD29D099110084BD24 /* StorageService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,10 +31,10 @@
 		FE9B8AB229CC867C0084BD24 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		FE9B8AB629CCC1830084BD24 /* PrimaryActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryActionButton.swift; sourceTree = "<group>"; };
 		FE9B8ABB29CCC52F0084BD24 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
-		FE9B8ABF29CCC6380084BD24 /* LoginWithAppleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWithAppleButton.swift; sourceTree = "<group>"; };
 		FE9B8AC329CCCC370084BD24 /* BackgroundCastleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundCastleView.swift; sourceTree = "<group>"; };
 		FE9B8AC529CCCC980084BD24 /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
 		FE9B8AC729CCCD190084BD24 /* SecondaryActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryActionButton.swift; sourceTree = "<group>"; };
+		FE9B8ACD29D099110084BD24 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +70,7 @@
 				FE9B8AAB29CC86330084BD24 /* App */,
 				FE9B8AB429CCC1680084BD24 /* Utils */,
 				FE9B8AAC29CC86430084BD24 /* Features */,
+				FE9B8ACC29D098FB0084BD24 /* Services */,
 				FE4E7A4729C4B2AE00325835 /* Assets.xcassets */,
 				FE4E7A4929C4B2AE00325835 /* Preview Content */,
 			);
@@ -123,7 +124,6 @@
 			isa = PBXGroup;
 			children = (
 				FE9B8AB629CCC1830084BD24 /* PrimaryActionButton.swift */,
-				FE9B8ABF29CCC6380084BD24 /* LoginWithAppleButton.swift */,
 				FE9B8AC729CCCD190084BD24 /* SecondaryActionButton.swift */,
 			);
 			path = UIComponents;
@@ -155,6 +155,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		FE9B8ACC29D098FB0084BD24 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FE9B8ACD29D099110084BD24 /* StorageService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -165,6 +173,7 @@
 				FE4E7A3C29C4B2AD00325835 /* Sources */,
 				FE4E7A3D29C4B2AD00325835 /* Frameworks */,
 				FE4E7A3E29C4B2AD00325835 /* Resources */,
+				FE9B8ACB29D094FA0084BD24 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -220,6 +229,26 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		FE9B8ACB29D094FA0084BD24 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FE4E7A3C29C4B2AD00325835 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -229,8 +258,8 @@
 				FE9B8AC629CCCC980084BD24 /* LogoView.swift in Sources */,
 				FE9B8ABC29CCC52F0084BD24 /* Color.swift in Sources */,
 				FE9B8AB129CC86710084BD24 /* LoginViewModel.swift in Sources */,
-				FE9B8AC029CCC6380084BD24 /* LoginWithAppleButton.swift in Sources */,
 				FE9B8AAF29CC86670084BD24 /* LoginView.swift in Sources */,
+				FE9B8ACE29D099110084BD24 /* StorageService.swift in Sources */,
 				FE9B8AC829CCCD190084BD24 /* SecondaryActionButton.swift in Sources */,
 				FE9B8AC429CCCC370084BD24 /* BackgroundCastleView.swift in Sources */,
 				FE4E7A4429C4B2AD00325835 /* WatchtowerApp.swift in Sources */,
@@ -369,8 +398,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -398,8 +428,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

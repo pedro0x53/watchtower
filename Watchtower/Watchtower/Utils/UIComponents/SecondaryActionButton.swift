@@ -11,7 +11,7 @@ struct SecondaryActionButton: View {
     var title: String
     var action: () -> Void
 
-    init(_ title: String, _ action: @escaping () -> Void) {
+    init(_ title: String, action: @escaping () -> Void) {
         self.title = title
         self.action = action
     }
