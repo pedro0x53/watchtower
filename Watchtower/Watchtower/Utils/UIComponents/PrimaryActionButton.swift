@@ -9,16 +9,18 @@ import SwiftUI
 
 struct PrimaryActionButton: View {
     var title: String
-    var action: () -> Void
+    var action: (() -> Void)?
 
-    init(_ title: String, action: @escaping () -> Void) {
+    init(_ title: String, action: (() -> Void)? = nil) {
         self.title = title
         self.action = action
     }
 
     var body: some View {
         Button {
-            action()
+            if let action = self.action {
+                action()
+            }
         } label: {
             Text(title)
                 .bold()

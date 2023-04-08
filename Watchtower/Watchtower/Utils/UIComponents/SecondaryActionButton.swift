@@ -9,15 +9,21 @@ import SwiftUI
 
 struct SecondaryActionButton: View {
     var title: String
-    var action: () -> Void
+    var action: (() -> Void)?
 
-    init(_ title: String, action: @escaping () -> Void) {
+    init(_ title: String, action: (() -> Void)? = nil) {
         self.title = title
         self.action = action
     }
 
     var body: some View {
-        Button(title, action: action)
+        Button {
+            if let action = self.action {
+                action()
+            }
+        } label: {
+            Text(title)
+        }
         .buttonStyle(.automatic)
         .tint(.flame)
     }
