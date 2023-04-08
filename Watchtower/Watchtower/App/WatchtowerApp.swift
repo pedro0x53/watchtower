@@ -11,7 +11,9 @@ import SwiftUI
 struct WatchtowerApp: App {
     var body: some Scene {
         WindowGroup {
-            LoginView(viewModel: LoginViewModel())
+            LoginView()
+                .environmentObject(AppState())
+                .tint(.flame)
         }
     }
 }
