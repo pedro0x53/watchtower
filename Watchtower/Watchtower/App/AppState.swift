@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+class AppState: ObservableObject {
+    var session = Session()
+}
