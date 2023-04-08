@@ -22,11 +22,6 @@ struct LoginView: View {
 
                 Spacer()
 
-                SignInWithAppleButton(.signIn,
-                                      onRequest: didTapSignInButton,
-                                      onCompletion: viewModel.signInCompletion)
-                .frame(height: 44)
-
                 PrimaryActionButton("Iniciar Sessão Local",
                                     action: didTaplocalSessionButton)
 
@@ -39,11 +34,10 @@ struct LoginView: View {
         }
     }
 
-    func didTapSignInButton(request: ASAuthorizationRequest) {}
-
     func didTaplocalSessionButton() {
         viewModel.startLocalSession()
     }
+
     func didTaplocalSessionInfoButton() {}
 }
 
