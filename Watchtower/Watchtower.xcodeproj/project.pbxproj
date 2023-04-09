@@ -11,7 +11,6 @@
 		FE4E7A4829C4B2AE00325835 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE4E7A4729C4B2AE00325835 /* Assets.xcassets */; };
 		FE4E7A4B29C4B2AE00325835 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE4E7A4A29C4B2AE00325835 /* Preview Assets.xcassets */; };
 		FE9B8AAF29CC86670084BD24 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9B8AAE29CC86670084BD24 /* LoginView.swift */; };
-		FE9B8AB329CC867C0084BD24 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9B8AB229CC867C0084BD24 /* LoginModel.swift */; };
 		FE9B8AB729CCC1830084BD24 /* PrimaryActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9B8AB629CCC1830084BD24 /* PrimaryActionButton.swift */; };
 		FE9B8ABC29CCC52F0084BD24 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9B8ABB29CCC52F0084BD24 /* Color.swift */; };
 		FE9B8AC429CCCC370084BD24 /* BackgroundCastleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9B8AC329CCCC370084BD24 /* BackgroundCastleView.swift */; };
@@ -22,6 +21,10 @@
 		FEFF7A3129E201F100913B92 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFF7A3029E201F100913B92 /* Session.swift */; };
 		FEFF7A3529E2043A00913B92 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFF7A3429E2043A00913B92 /* DashboardView.swift */; };
 		FEFF7A3929E2045500913B92 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFF7A3829E2045500913B92 /* InfoView.swift */; };
+		FEFF7A3C29E2398200913B92 /* AppCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFF7A3B29E2398200913B92 /* AppCardView.swift */; };
+		FEFF7A3E29E23D7D00913B92 /* PercentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFF7A3D29E23D7D00913B92 /* PercentView.swift */; };
+		FEFF7A4029E302D900913B92 /* VerificationLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFF7A3F29E302D900913B92 /* VerificationLevel.swift */; };
+		FEFF7A4229E3091E00913B92 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFF7A4129E3091E00913B92 /* App.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,7 +33,6 @@
 		FE4E7A4729C4B2AE00325835 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE4E7A4A29C4B2AE00325835 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FE9B8AAE29CC86670084BD24 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		FE9B8AB229CC867C0084BD24 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		FE9B8AB629CCC1830084BD24 /* PrimaryActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryActionButton.swift; sourceTree = "<group>"; };
 		FE9B8ABB29CCC52F0084BD24 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		FE9B8AC329CCCC370084BD24 /* BackgroundCastleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundCastleView.swift; sourceTree = "<group>"; };
@@ -41,6 +43,10 @@
 		FEFF7A3029E201F100913B92 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		FEFF7A3429E2043A00913B92 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		FEFF7A3829E2045500913B92 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		FEFF7A3B29E2398200913B92 /* AppCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCardView.swift; sourceTree = "<group>"; };
+		FEFF7A3D29E23D7D00913B92 /* PercentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PercentView.swift; sourceTree = "<group>"; };
+		FEFF7A3F29E302D900913B92 /* VerificationLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationLevel.swift; sourceTree = "<group>"; };
+		FEFF7A4129E3091E00913B92 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,7 +121,6 @@
 			isa = PBXGroup;
 			children = (
 				FE9B8AC229CCCC270084BD24 /* View */,
-				FE9B8AB229CC867C0084BD24 /* LoginModel.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -176,6 +181,8 @@
 			isa = PBXGroup;
 			children = (
 				FEFF7A3029E201F100913B92 /* Session.swift */,
+				FEFF7A3F29E302D900913B92 /* VerificationLevel.swift */,
+				FEFF7A4129E3091E00913B92 /* App.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -191,6 +198,7 @@
 		FEFF7A3329E2042C00913B92 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FEFF7A3A29E2397400913B92 /* UIComponents */,
 				FEFF7A3429E2043A00913B92 /* DashboardView.swift */,
 			);
 			path = View;
@@ -210,6 +218,15 @@
 				FEFF7A3829E2045500913B92 /* InfoView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		FEFF7A3A29E2397400913B92 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				FEFF7A3B29E2398200913B92 /* AppCardView.swift */,
+				FEFF7A3D29E23D7D00913B92 /* PercentView.swift */,
+			);
+			path = UIComponents;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,13 +320,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE9B8AB329CC867C0084BD24 /* LoginModel.swift in Sources */,
 				FEFF7A3529E2043A00913B92 /* DashboardView.swift in Sources */,
 				FE9B8AC629CCCC980084BD24 /* LogoView.swift in Sources */,
 				FE9B8ABC29CCC52F0084BD24 /* Color.swift in Sources */,
+				FEFF7A3C29E2398200913B92 /* AppCardView.swift in Sources */,
+				FEFF7A3E29E23D7D00913B92 /* PercentView.swift in Sources */,
+				FEFF7A4229E3091E00913B92 /* App.swift in Sources */,
 				FE9B8AAF29CC86670084BD24 /* LoginView.swift in Sources */,
 				FEFF7A3929E2045500913B92 /* InfoView.swift in Sources */,
 				FE9B8ACE29D099110084BD24 /* StorageService.swift in Sources */,
+				FEFF7A4029E302D900913B92 /* VerificationLevel.swift in Sources */,
 				FEFF7A2E29E201C100913B92 /* AppState.swift in Sources */,
 				FE9B8AC829CCCD190084BD24 /* SecondaryActionButton.swift in Sources */,
 				FEFF7A3129E201F100913B92 /* Session.swift in Sources */,
