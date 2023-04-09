@@ -13,6 +13,7 @@ extension UIColor {
     static let harvestGold = UIColor(named: "harvestGold")
     static let flame = UIColor(named: "flame")
     static let eerieBlack = UIColor(named: "eerieBlack")
+    static let antiFlashWhite = UIColor(named: "antiFlashWhite")
 }
 
 extension Color {
@@ -21,4 +22,5 @@ extension Color {
     static let harvestGold = Color(uiColor: UIColor.harvestGold!)
     static let flame = Color(uiColor: UIColor.flame!)
     static let eerieBlack = Color(uiColor: UIColor.eerieBlack!)
+    static let antiFlashWhite = Color(uiColor: UIColor.antiFlashWhite!)
 }

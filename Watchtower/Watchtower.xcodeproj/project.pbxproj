@@ -24,7 +24,11 @@
 		FEFF7A3C29E2398200913B92 /* AppCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFF7A3B29E2398200913B92 /* AppCardView.swift */; };
 		FEFF7A3E29E23D7D00913B92 /* PercentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFF7A3D29E23D7D00913B92 /* PercentView.swift */; };
 		FEFF7A4029E302D900913B92 /* VerificationLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFF7A3F29E302D900913B92 /* VerificationLevel.swift */; };
-		FEFF7A4229E3091E00913B92 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFF7A4129E3091E00913B92 /* App.swift */; };
+		FEFF7A4229E3091E00913B92 /* MobileApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFF7A4129E3091E00913B92 /* MobileApp.swift */; };
+		FEFF7A4629E30D5300913B92 /* NewAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFF7A4529E30D5300913B92 /* NewAppView.swift */; };
+		FEFF7A4829E30DC500913B92 /* LabeledTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFF7A4729E30DC500913B92 /* LabeledTextField.swift */; };
+		FEFF7A4B29E3108700913B92 /* VerificationLevelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFF7A4A29E3108700913B92 /* VerificationLevelView.swift */; };
+		FEFF7A4D29E310CF00913B92 /* VerificationLevelStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFF7A4C29E310CF00913B92 /* VerificationLevelStackView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,7 +50,11 @@
 		FEFF7A3B29E2398200913B92 /* AppCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCardView.swift; sourceTree = "<group>"; };
 		FEFF7A3D29E23D7D00913B92 /* PercentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PercentView.swift; sourceTree = "<group>"; };
 		FEFF7A3F29E302D900913B92 /* VerificationLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationLevel.swift; sourceTree = "<group>"; };
-		FEFF7A4129E3091E00913B92 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		FEFF7A4129E3091E00913B92 /* MobileApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileApp.swift; sourceTree = "<group>"; };
+		FEFF7A4529E30D5300913B92 /* NewAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAppView.swift; sourceTree = "<group>"; };
+		FEFF7A4729E30DC500913B92 /* LabeledTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabeledTextField.swift; sourceTree = "<group>"; };
+		FEFF7A4A29E3108700913B92 /* VerificationLevelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationLevelView.swift; sourceTree = "<group>"; };
+		FEFF7A4C29E310CF00913B92 /* VerificationLevelStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationLevelStackView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +121,7 @@
 				FE9B8AAD29CC86550084BD24 /* Login */,
 				FEFF7A3629E2044600913B92 /* Info */,
 				FEFF7A3229E2042500913B92 /* Dashboard */,
+				FEFF7A4329E30D3D00913B92 /* NewApp */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -139,6 +148,7 @@
 			children = (
 				FE9B8AB629CCC1830084BD24 /* PrimaryActionButton.swift */,
 				FE9B8AC729CCCD190084BD24 /* SecondaryActionButton.swift */,
+				FEFF7A4729E30DC500913B92 /* LabeledTextField.swift */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -182,7 +192,7 @@
 			children = (
 				FEFF7A3029E201F100913B92 /* Session.swift */,
 				FEFF7A3F29E302D900913B92 /* VerificationLevel.swift */,
-				FEFF7A4129E3091E00913B92 /* App.swift */,
+				FEFF7A4129E3091E00913B92 /* MobileApp.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -227,6 +237,32 @@
 				FEFF7A3D29E23D7D00913B92 /* PercentView.swift */,
 			);
 			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		FEFF7A4329E30D3D00913B92 /* NewApp */ = {
+			isa = PBXGroup;
+			children = (
+				FEFF7A4429E30D4500913B92 /* View */,
+			);
+			path = NewApp;
+			sourceTree = "<group>";
+		};
+		FEFF7A4429E30D4500913B92 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FEFF7A4929E3107900913B92 /* UIComponent */,
+				FEFF7A4529E30D5300913B92 /* NewAppView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FEFF7A4929E3107900913B92 /* UIComponent */ = {
+			isa = PBXGroup;
+			children = (
+				FEFF7A4A29E3108700913B92 /* VerificationLevelView.swift */,
+				FEFF7A4C29E310CF00913B92 /* VerificationLevelStackView.swift */,
+			);
+			path = UIComponent;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,12 +361,16 @@
 				FE9B8ABC29CCC52F0084BD24 /* Color.swift in Sources */,
 				FEFF7A3C29E2398200913B92 /* AppCardView.swift in Sources */,
 				FEFF7A3E29E23D7D00913B92 /* PercentView.swift in Sources */,
-				FEFF7A4229E3091E00913B92 /* App.swift in Sources */,
+				FEFF7A4229E3091E00913B92 /* MobileApp.swift in Sources */,
 				FE9B8AAF29CC86670084BD24 /* LoginView.swift in Sources */,
+				FEFF7A4629E30D5300913B92 /* NewAppView.swift in Sources */,
+				FEFF7A4B29E3108700913B92 /* VerificationLevelView.swift in Sources */,
 				FEFF7A3929E2045500913B92 /* InfoView.swift in Sources */,
+				FEFF7A4D29E310CF00913B92 /* VerificationLevelStackView.swift in Sources */,
 				FE9B8ACE29D099110084BD24 /* StorageService.swift in Sources */,
 				FEFF7A4029E302D900913B92 /* VerificationLevel.swift in Sources */,
 				FEFF7A2E29E201C100913B92 /* AppState.swift in Sources */,
+				FEFF7A4829E30DC500913B92 /* LabeledTextField.swift in Sources */,
 				FE9B8AC829CCCD190084BD24 /* SecondaryActionButton.swift in Sources */,
 				FEFF7A3129E201F100913B92 /* Session.swift in Sources */,
 				FE9B8AC429CCCC370084BD24 /* BackgroundCastleView.swift in Sources */,

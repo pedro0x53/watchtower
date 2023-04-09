@@ -8,7 +8,11 @@
 import SwiftUI
 
 struct PercentView: View {
-    @State var percent: Double
+    @State private var percent: Double
+
+    init(percent: Double) {
+        self.percent = percent
+    }
 
     var body: some View {
         ZStack {

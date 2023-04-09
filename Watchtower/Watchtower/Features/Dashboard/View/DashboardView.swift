@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct DashboardView: View {
+
+    @State private var isCreatingNewApp: Bool = false
+
     var body: some View {
         NavigationStack {
             ScrollView {
@@ -22,7 +25,7 @@ struct DashboardView: View {
             .navigationTitle("Apps")
             .toolbar {
                 Button {
-                    print("Create new App")
+                    isCreatingNewApp = true
                 } label: {
                     Image(systemName: "plus")
                 }
@@ -31,6 +34,9 @@ struct DashboardView: View {
             .ignoresSafeArea(.all, edges: .bottom)
         }
         .navigationBarBackButtonHidden(true)
+        .sheet(isPresented: $isCreatingNewApp, content: {
+            NewAppView()
+        })
     }
 }
 

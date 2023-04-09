@@ -8,7 +8,10 @@
 
 import Foundation
 
-enum VerificationLevel: Int, CustomStringConvertible {
+enum VerificationLevel: Int, CustomStringConvertible, CaseIterable, Identifiable {
+
+    var id: Int { self.rawValue }
+
     case l1
     case l2
     case l1r

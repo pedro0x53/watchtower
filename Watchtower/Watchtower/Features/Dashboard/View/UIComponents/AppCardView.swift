@@ -10,7 +10,13 @@ import SwiftUI
 struct AppCardView: View {
     let name: String
     let level: VerificationLevel
-    @State var percent: Double
+    @State private var percent: Double
+
+    init(name: String, level: VerificationLevel, percent: Double) {
+        self.name = name
+        self.level = level
+        self.percent = percent
+    }
 
     var body: some View {
         ZStack {
