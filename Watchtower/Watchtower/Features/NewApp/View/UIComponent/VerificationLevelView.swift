@@ -27,7 +27,6 @@ struct VerificationLevelView: View {
         .frame(maxWidth: 80, maxHeight: 80)
         .onTapGesture {
             currentLevel = self.level
-            print("Inner: \(currentLevel)")
         }
     }
 }

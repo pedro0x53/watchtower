@@ -8,11 +8,7 @@
 import SwiftUI
 
 struct VerificationLevelStackView: View {
-    @State private var selectedLevel: VerificationLevel {
-        didSet {
-            print("Outter: \(selectedLevel)")
-        }
-    }
+    @State private var selectedLevel: VerificationLevel
 
     init(selectedLevel: VerificationLevel) {
         self.selectedLevel = selectedLevel
