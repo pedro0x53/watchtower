@@ -9,17 +9,13 @@ import SwiftUI
 
 struct NewAppView: View {
     @State var name: String = ""
-    @State var level: VerificationLevel = .l1 {
-        didSet {
-            print("Did change level to: \(level)")
-        }
-    }
+    @State var level: VerificationLevel = .l1
 
     var body: some View {
         NavigationStack {
             ScrollView(.vertical) {
                 VStack(alignment: .leading, spacing: 30) {
-                    LabeledTextField(fieldName: "Nome do App", value: $name)
+                    LabeledTextField(fieldName: "Nome do Projeto", value: $name)
 
                     VerificationLevelStackView(selectedLevel: level)
 
@@ -35,7 +31,7 @@ struct NewAppView: View {
             .padding(16)
             .toolbar {
                 Button {
-                    print("Save new App")
+                    print("Save new Project")
                 } label: {
                     Text("Salvar")
                         .fontWeight(.bold)

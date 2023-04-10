@@ -13,7 +13,7 @@ struct Requirement: Identifiable {
     let category: MASVSCategory
     let testCases: [TestCase]
     let description: String
-    let isChecked: Bool
+    var isChecked: Bool
 }
 
 struct TestCase: Identifiable {

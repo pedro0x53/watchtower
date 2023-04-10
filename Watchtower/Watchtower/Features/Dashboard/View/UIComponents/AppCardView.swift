@@ -44,6 +44,7 @@ struct AppCardView: View {
 
                 PercentView(percent: percent)
             }
+            .tint(Color.black)
         }
         .padding(16)
         .frame(height: 130)

@@ -11,35 +11,39 @@ struct RequirementView: View {
     let requirement: Requirement
 
     var body: some View {
-        ScrollView(.vertical) {
-            VStack(alignment: .leading, spacing: 30) {
-                HStack {
-                    Text("MASVS ID: ")
-                        .fontWeight(.bold)
-                    Text(requirement.masvsID)
-                    Spacer()
-                }
-                .font(.body)
-
-                if !requirement.testCases.isEmpty {
-                    VStack(alignment: .leading) {
-                        Text("Test Case:")
+        NavigationStack {
+            ScrollView(.vertical) {
+                VStack(alignment: .leading, spacing: 30) {
+                    HStack {
+                        Text("MASVS ID: ")
                             .fontWeight(.bold)
-                        Grid(alignment: .leading, horizontalSpacing: 16, verticalSpacing: 16) {
-                            ForEach(requirement.testCases) { testCase in
-                                LinkButtonView(name: testCase.type.rawValue,
-                                               url: testCase.url)
+                        Text(requirement.masvsID)
+                        Spacer()
+                    }
+                    .font(.body)
+                    
+                    if !requirement.testCases.isEmpty {
+                        VStack(alignment: .leading) {
+                            Text("Test Case:")
+                                .fontWeight(.bold)
+                            Grid(alignment: .leading, horizontalSpacing: 16, verticalSpacing: 16) {
+                                ForEach(requirement.testCases) { testCase in
+                                    LinkButtonView(name: testCase.type.rawValue,
+                                                   url: testCase.url)
+                                }
                             }
                         }
                     }
-                }
-
-                VStack(alignment: .leading) {
-                    Text("Descrição:")
-                        .fontWeight(.bold)
-                    Text(requirement.description)
+                    
+                    VStack(alignment: .leading) {
+                        Text("Descrição:")
+                            .fontWeight(.bold)
+                        Text(requirement.description)
+                    }
                 }
             }
+            .padding(16)
+            .navigationTitle(requirement.category.name)
         }
     }
 }

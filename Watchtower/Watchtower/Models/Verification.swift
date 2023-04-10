@@ -10,5 +10,5 @@ import Foundation
 struct Verification: Identifiable {
     let id: Int
     let name: String
-    let requirements: [Requirement]
+    var requirements: [Requirement]
 }
