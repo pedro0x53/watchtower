@@ -8,7 +8,9 @@
 import SwiftUI
 import AuthenticationServices
 
-struct LoginView: View {
+struct LoginView<ViewModel>: View where ViewModel: LoginViewModelTemplate {
+    @ObservedObject var viewModel: ViewModel
+
     @State private var shouldShowInfo: Bool = false
 
     var body: some View {
@@ -25,6 +27,9 @@ struct LoginView: View {
 
                     NavigationLink {
                         DashboardView()
+                            .onAppear {
+                                viewModel.startNewSession()
+                            }
                     } label: {
                         Text("Iniciar Sessão Local")
                             .bold()
@@ -51,7 +56,7 @@ struct LoginView: View {
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView()
+        LoginView(viewModel: LoginViewModel())
             .tint(.flame)
     }
 }

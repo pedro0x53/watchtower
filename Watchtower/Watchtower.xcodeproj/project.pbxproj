@@ -10,6 +10,7 @@
 		FE4E7A4429C4B2AD00325835 /* WatchtowerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4E7A4329C4B2AD00325835 /* WatchtowerApp.swift */; };
 		FE4E7A4829C4B2AE00325835 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE4E7A4729C4B2AE00325835 /* Assets.xcassets */; };
 		FE4E7A4B29C4B2AE00325835 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE4E7A4A29C4B2AE00325835 /* Preview Assets.xcassets */; };
+		FE8FB8B029EC1F720029A9DA /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8FB8AF29EC1F720029A9DA /* LoginViewModel.swift */; };
 		FE9B8AAF29CC86670084BD24 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9B8AAE29CC86670084BD24 /* LoginView.swift */; };
 		FE9B8AB729CCC1830084BD24 /* PrimaryActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9B8AB629CCC1830084BD24 /* PrimaryActionButton.swift */; };
 		FE9B8ABC29CCC52F0084BD24 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9B8ABB29CCC52F0084BD24 /* Color.swift */; };
@@ -45,6 +46,7 @@
 		FE4E7A4329C4B2AD00325835 /* WatchtowerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchtowerApp.swift; sourceTree = "<group>"; };
 		FE4E7A4729C4B2AE00325835 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE4E7A4A29C4B2AE00325835 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FE8FB8AF29EC1F720029A9DA /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		FE9B8AAE29CC86670084BD24 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		FE9B8AB629CCC1830084BD24 /* PrimaryActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryActionButton.swift; sourceTree = "<group>"; };
 		FE9B8ABB29CCC52F0084BD24 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				FE9B8AC229CCCC270084BD24 /* View */,
+				FE8FB8AF29EC1F720029A9DA /* LoginViewModel.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -439,6 +442,7 @@
 				FEFF7A4229E3091E00913B92 /* Project.swift in Sources */,
 				FE9B8AAF29CC86670084BD24 /* LoginView.swift in Sources */,
 				FEFF7A5329E3422F00913B92 /* RequirementView.swift in Sources */,
+				FE8FB8B029EC1F720029A9DA /* LoginViewModel.swift in Sources */,
 				FEFF7A4629E30D5300913B92 /* NewProjectView.swift in Sources */,
 				FEFF7A4B29E3108700913B92 /* VerificationLevelView.swift in Sources */,
 				FEFF7A3929E2045500913B92 /* InfoView.swift in Sources */,
