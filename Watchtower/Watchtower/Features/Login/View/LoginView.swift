@@ -45,7 +45,8 @@ struct LoginView<ViewModel>: View where ViewModel: LoginViewModelTemplate {
                     }
                     .sheet(isPresented: $shouldShowInfo, content: {
                         InfoView()
-                            .presentationDetents([.medium])
+                            .presentationDetents([.fraction(2/5)])
+                            .presentationDragIndicator(.visible)
                     })
                 }
             }

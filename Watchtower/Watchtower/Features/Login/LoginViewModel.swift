@@ -14,6 +14,5 @@ protocol LoginViewModelTemplate: ObservableObject {
 class LoginViewModel: LoginViewModelTemplate {
     func startNewSession() {
         StorageService.set(UUID().uuidString, for: .sessionID)
-        print("current session id: \(StorageService.get(.sessionID))")
     }
 }
