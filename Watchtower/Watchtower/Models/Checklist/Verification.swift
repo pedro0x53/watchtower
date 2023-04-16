@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Verification: Identifiable {
+struct Verification: Identifiable, Codable {
     let id: Int
     let name: String
     var requirements: [Requirement]

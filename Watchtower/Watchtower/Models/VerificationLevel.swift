@@ -12,10 +12,10 @@ enum VerificationLevel: Int, CustomStringConvertible, CaseIterable, Identifiable
 
     var id: Int { self.rawValue }
 
-    case l1
-    case l2
-    case l1r
-    case l2r
+    case l1 = 0
+    case l2 = 1
+    case l1r = 2
+    case l2r = 3
 
     var description: String {
         switch self {

@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum MASVSCategory: Int, Identifiable, CaseIterable {
+enum MASVSCategory: Int, Identifiable, CaseIterable, Codable {
     var id: Int { self.rawValue }
 
     case arch = 1

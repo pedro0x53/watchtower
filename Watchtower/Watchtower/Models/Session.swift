@@ -9,11 +9,11 @@ import Foundation
 
 struct Session {
     var sessionID: String {
-        if let sessionID = StorageService.get(.sessionID) as? String {
+        if let sessionID = KeysService.get(.sessionID) as? String {
             return sessionID
         } else {
             let sessionID = UUID().uuidString
-            StorageService.set(sessionID, for: .sessionID)
+            KeysService.set(sessionID, for: .sessionID)
             return sessionID
         }
     }

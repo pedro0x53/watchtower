@@ -12,7 +12,7 @@ struct WatchtowerApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationStack {
-                if StorageService.get(.sessionID) == nil {
+                if KeysService.get(.sessionID) == nil {
                     LoginView(viewModel: LoginViewModel())
                 } else {
                     DashboardView()

@@ -28,7 +28,7 @@ struct RequirementView: View {
                                 .fontWeight(.bold)
                             Grid(alignment: .leading, horizontalSpacing: 16, verticalSpacing: 16) {
                                 ForEach(requirement.testCases) { testCase in
-                                    LinkButtonView(name: testCase.type.rawValue,
+                                    LinkButtonView(name: testCase.type.name,
                                                    url: testCase.url)
                                 }
                             }

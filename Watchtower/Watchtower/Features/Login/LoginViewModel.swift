@@ -13,6 +13,6 @@ protocol LoginViewModelTemplate: ObservableObject {
 
 class LoginViewModel: LoginViewModelTemplate {
     func startNewSession() {
-        StorageService.set(UUID().uuidString, for: .sessionID)
+        KeysService.set(UUID().uuidString, for: .sessionID)
     }
 }
