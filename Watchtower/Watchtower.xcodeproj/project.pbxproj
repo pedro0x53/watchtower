@@ -18,6 +18,12 @@
 		FE8FB8BE29EC38840029A9DA /* CoreDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8FB8BD29EC38840029A9DA /* CoreDataModel.swift */; };
 		FE8FB8C029EC3B180029A9DA /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8FB8BF29EC3B180029A9DA /* NSObject.swift */; };
 		FE8FB8C429ED63600029A9DA /* NewProjectViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8FB8C329ED63600029A9DA /* NewProjectViewModel.swift */; };
+		FE8FB8C629ED6DF00029A9DA /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8FB8C529ED6DF00029A9DA /* DashboardViewModel.swift */; };
+		FE8FB8C829ED72EB0029A9DA /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8FB8C729ED72EB0029A9DA /* Project.swift */; };
+		FE8FB8CF29ED79110029A9DA /* L2+R.json in Resources */ = {isa = PBXBuildFile; fileRef = FE8FB8CB29ED79110029A9DA /* L2+R.json */; };
+		FE8FB8D029ED79110029A9DA /* L1+R.json in Resources */ = {isa = PBXBuildFile; fileRef = FE8FB8CC29ED79110029A9DA /* L1+R.json */; };
+		FE8FB8D129ED79110029A9DA /* L1.json in Resources */ = {isa = PBXBuildFile; fileRef = FE8FB8CD29ED79110029A9DA /* L1.json */; };
+		FE8FB8D229ED79110029A9DA /* L2.json in Resources */ = {isa = PBXBuildFile; fileRef = FE8FB8CE29ED79110029A9DA /* L2.json */; };
 		FE9B8AAF29CC86670084BD24 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9B8AAE29CC86670084BD24 /* LoginView.swift */; };
 		FE9B8AB729CCC1830084BD24 /* PrimaryActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9B8AB629CCC1830084BD24 /* PrimaryActionButton.swift */; };
 		FE9B8ABC29CCC52F0084BD24 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9B8ABB29CCC52F0084BD24 /* Color.swift */; };
@@ -60,6 +66,12 @@
 		FE8FB8BD29EC38840029A9DA /* CoreDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataModel.swift; sourceTree = "<group>"; };
 		FE8FB8BF29EC3B180029A9DA /* NSObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObject.swift; sourceTree = "<group>"; };
 		FE8FB8C329ED63600029A9DA /* NewProjectViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewProjectViewModel.swift; sourceTree = "<group>"; };
+		FE8FB8C529ED6DF00029A9DA /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		FE8FB8C729ED72EB0029A9DA /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
+		FE8FB8CB29ED79110029A9DA /* L2+R.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "L2+R.json"; path = "../../../../../../Desktop/L2+R.json"; sourceTree = "<group>"; };
+		FE8FB8CC29ED79110029A9DA /* L1+R.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "L1+R.json"; path = "../../../../../../Desktop/L1+R.json"; sourceTree = "<group>"; };
+		FE8FB8CD29ED79110029A9DA /* L1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = L1.json; path = ../../../../../../Desktop/L1.json; sourceTree = "<group>"; };
+		FE8FB8CE29ED79110029A9DA /* L2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = L2.json; path = ../../../../../../Desktop/L2.json; sourceTree = "<group>"; };
 		FE9B8AAE29CC86670084BD24 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		FE9B8AB629CCC1830084BD24 /* PrimaryActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryActionButton.swift; sourceTree = "<group>"; };
 		FE9B8ABB29CCC52F0084BD24 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
@@ -124,7 +136,7 @@
 				FE9B8AB429CCC1680084BD24 /* Utils */,
 				FE9B8AAC29CC86430084BD24 /* Features */,
 				FE9B8ACC29D098FB0084BD24 /* Services */,
-				FE4E7A4729C4B2AE00325835 /* Assets.xcassets */,
+				FE8FB8C929ED78F30029A9DA /* Resources */,
 				FE4E7A4929C4B2AE00325835 /* Preview Content */,
 			);
 			path = Watchtower;
@@ -164,6 +176,26 @@
 				FEFF7A5829E34BE400913B92 /* MASVSCategory.swift */,
 			);
 			path = Checklist;
+			sourceTree = "<group>";
+		};
+		FE8FB8C929ED78F30029A9DA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FE8FB8CA29ED78FF0029A9DA /* VerificationLevels */,
+				FE4E7A4729C4B2AE00325835 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FE8FB8CA29ED78FF0029A9DA /* VerificationLevels */ = {
+			isa = PBXGroup;
+			children = (
+				FE8FB8CD29ED79110029A9DA /* L1.json */,
+				FE8FB8CC29ED79110029A9DA /* L1+R.json */,
+				FE8FB8CE29ED79110029A9DA /* L2.json */,
+				FE8FB8CB29ED79110029A9DA /* L2+R.json */,
+			);
+			path = VerificationLevels;
 			sourceTree = "<group>";
 		};
 		FE9B8AAB29CC86330084BD24 /* App */ = {
@@ -261,6 +293,7 @@
 				FE8FB8C229EC453F0029A9DA /* Checklist */,
 				FEFF7A3029E201F100913B92 /* Session.swift */,
 				FEFF7A3F29E302D900913B92 /* VerificationLevel.swift */,
+				FE8FB8C729ED72EB0029A9DA /* Project.swift */,
 				FE8FB8B429EC35470029A9DA /* Watchtower.xcdatamodeld */,
 			);
 			path = Models;
@@ -270,6 +303,7 @@
 			isa = PBXGroup;
 			children = (
 				FEFF7A3329E2042C00913B92 /* View */,
+				FE8FB8C529ED6DF00029A9DA /* DashboardViewModel.swift */,
 			);
 			path = Dashboard;
 			sourceTree = "<group>";
@@ -445,7 +479,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE4E7A4B29C4B2AE00325835 /* Preview Assets.xcassets in Resources */,
+				FE8FB8CF29ED79110029A9DA /* L2+R.json in Resources */,
+				FE8FB8D129ED79110029A9DA /* L1.json in Resources */,
+				FE8FB8D229ED79110029A9DA /* L2.json in Resources */,
 				FE4E7A4829C4B2AE00325835 /* Assets.xcassets in Resources */,
+				FE8FB8D029ED79110029A9DA /* L1+R.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,6 +525,7 @@
 				FE9B8AAF29CC86670084BD24 /* LoginView.swift in Sources */,
 				FEFF7A5329E3422F00913B92 /* RequirementView.swift in Sources */,
 				FE8FB8B029EC1F720029A9DA /* LoginViewModel.swift in Sources */,
+				FE8FB8C629ED6DF00029A9DA /* DashboardViewModel.swift in Sources */,
 				FEFF7A4629E30D5300913B92 /* NewProjectView.swift in Sources */,
 				FEFF7A4B29E3108700913B92 /* VerificationLevelView.swift in Sources */,
 				FEFF7A3929E2045500913B92 /* InfoView.swift in Sources */,
@@ -500,6 +539,7 @@
 				FEFF7A2E29E201C100913B92 /* AppState.swift in Sources */,
 				FEFF7A5529E3425E00913B92 /* Requirement.swift in Sources */,
 				FEFF7A6529E3639800913B92 /* CheckBoxToggleStyle.swift in Sources */,
+				FE8FB8C829ED72EB0029A9DA /* Project.swift in Sources */,
 				FEFF7A6329E360FA00913B92 /* RequirementRowView.swift in Sources */,
 				FE8FB8C429ED63600029A9DA /* NewProjectViewModel.swift in Sources */,
 				FEFF7A4829E30DC500913B92 /* LabeledTextField.swift in Sources */,

@@ -42,7 +42,7 @@ struct ProjectView: View {
                 }
             }
             .padding(.top, 16)
-            .navigationTitle(project.name)
+            .navigationTitle(project.name!)
             .navigationBarTitleDisplayMode(.large)
             .toolbar {
                 Button("Editar") {
@@ -54,32 +54,5 @@ struct ProjectView: View {
 
     private func checklistCallback(index: (Int, Int), value: Bool) {
         self.checklist.verifications[index.0].requirements[index.1].isChecked = value
-    }
-}
-
-struct ProjectView_Previews: PreviewProvider {
-    static var previews: some View {
-        ProjectView(
-            project: Project(id: UUID(), name: "Projeto", level: .l1r),
-            checklist: Checklist(
-                id: UUID().uuidString,
-                verifications: [
-                    Verification(id: 0, name: "Verification 1",
-                        requirements:
-                            [
-                                Requirement(id: 1, category: .arch,
-                                            testCases: [], description: "",
-                                            isChecked: true)
-                            ]),
-                    Verification(id: 1, name: "Verification 2",
-                        requirements:
-                            [
-                                Requirement(id: 1, category: .storage,
-                                            testCases: [], description: "",
-                                            isChecked: true)
-                            ])
-                ])
-        )
-            .tint(.flame)
     }
 }

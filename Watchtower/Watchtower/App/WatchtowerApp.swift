@@ -15,7 +15,8 @@ struct WatchtowerApp: App {
                 if KeysService.get(.sessionID) == nil {
                     LoginView(viewModel: LoginViewModel())
                 } else {
-                    DashboardView()
+                    DashboardView(viewModel: DashboardViewModel(store: StorageService(),
+                                                                stack: CoreDataStack.shared))
                 }
             }
             .tint(.flame)

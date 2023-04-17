@@ -7,22 +7,8 @@
 
 import SwiftUI
 
-struct DashboardView: View {
-
-    private static let id = UUID()
-    static var project: Project = {
-        return Project(id: id, name: "Project", level: .l1)
-    }()
-
-    private static var chacklist: Checklist = {
-        return Checklist(id: DashboardView.id.uuidString,
-                         verifications: [
-                            Verification(id: 0, name: "Verification 0",
-                                         requirements: [
-                                            Requirement(id: 0, category: .arch, testCases: [], description: "Desc...", isChecked: false)
-                                         ])
-                         ])
-    }()
+struct DashboardView<ViewModel>: View where ViewModel: DashboardViewModelTemplate {
+    @ObservedObject var viewModel: ViewModel
 
     @State private var isCreatingNewApp: Bool = false
 
@@ -30,12 +16,16 @@ struct DashboardView: View {
         NavigationStack {
             ScrollView {
                 LazyVGrid(columns: [GridItem()], spacing: 16) {
-                    ForEach(0..<10) { id in
-                        NavigationLink {
-                            ProjectView(project: DashboardView.project,
-                                        checklist: DashboardView.chacklist)
-                        } label: {
-                            AppCardView(name: "MyApp", level: .l1r, percent: Double(id))
+                    ForEach(viewModel.checklists) { checklist in
+                        if let project = viewModel.getProjectforID(id: checklist.id) {
+                            NavigationLink {
+                                ProjectView(project: project,
+                                            checklist: checklist)
+                            } label: {
+                                AppCardView(name: project.name!,
+                                            level: VerificationLevel(rawValue: Int(project.rawLevel))!,
+                                            percent: 0)
+                            }
                         }
                     }
                 }
@@ -54,15 +44,22 @@ struct DashboardView: View {
             .ignoresSafeArea(.all, edges: .bottom)
         }
         .navigationBarBackButtonHidden(true)
-        .sheet(isPresented: $isCreatingNewApp, content: {
-            NewAppView()
-        })
+        .sheet(isPresented: $isCreatingNewApp,
+            onDismiss: {
+                viewModel.update()
+            },
+            content: {
+                NewProjectView(viewModel: NewProjectViewModel(stack: CoreDataStack.shared,
+                                                              store: StorageService()))
+            }
+        )
     }
 }
 
 struct DashboardView_Previews: PreviewProvider {
     static var previews: some View {
-        DashboardView()
+        DashboardView(viewModel: DashboardViewModel(store: StorageService(),
+                                                    stack: CoreDataStack.shared))
             .tint(.flame)
     }
 }

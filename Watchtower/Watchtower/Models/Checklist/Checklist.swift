@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Checklist: Codable {
+struct Checklist: Codable, Identifiable {
     let id: String
     var verifications: [Verification]
 }

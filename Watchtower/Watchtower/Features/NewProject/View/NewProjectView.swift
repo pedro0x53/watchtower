@@ -1,5 +1,5 @@
 //
-//  NewAppView.swift
+//  NewProjectView.swift
 //  Watchtower
 //
 //  Created by Pedro Sousa on 09/04/23.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct NewAppView<ViewModel>: View where ViewModel: NewProjectViewModelTemplate {
+struct NewProjectView<ViewModel>: View where ViewModel: NewProjectViewModelTemplate {
     @State var name: String = ""
     @State var level: VerificationLevel = .l1
 
@@ -50,8 +50,8 @@ struct NewAppView<ViewModel>: View where ViewModel: NewProjectViewModelTemplate 
 
 struct NewAppView_Previews: PreviewProvider {
     static var previews: some View {
-        NewAppView(viewModel: NewProjectViewModel(stack: CoreDataStack.shared,
-                                                  store: StorageService()))
+        NewProjectView(viewModel: NewProjectViewModel(stack: CoreDataStack.shared,
+                                                      store: StorageService()))
             .tint(.flame)
     }
 }

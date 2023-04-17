@@ -10,11 +10,11 @@ import Foundation
 class StorageService {
     private static let manager = FileManager.default
     private static let directoryName: String = "checklists"
-    
+
     private var documentsURL: URL {
         StorageService.manager.urls(for: .documentDirectory, in: .userDomainMask).first!
     }
-    
+
     private var checklistURL: URL {
         self.documentsURL.appendingPathComponent(StorageService.directoryName)
     }
@@ -24,14 +24,13 @@ class StorageService {
                     .appending(component: StorageService.directoryName)
                     .appending(component: checklistName)
                     .appendingPathExtension("json")
-        
     }
 
     func readAllCheckLists() -> [Checklist] {
         guard let content = try? StorageService.manager.contentsOfDirectory(atPath: checklistURL.path())
         else { return [] }
 
-        var checklists: [Checklist] = content.compactMap { path in
+        let checklists: [Checklist] = content.compactMap { path in
             guard let rawCheckList = StorageService.manager.contents(atPath: path),
                   let checklist = try? JSONDecoder().decode(Checklist.self, from: rawCheckList)
             else { return nil }

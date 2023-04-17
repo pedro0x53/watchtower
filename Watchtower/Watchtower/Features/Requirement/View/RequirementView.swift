@@ -21,7 +21,7 @@ struct RequirementView: View {
                         Spacer()
                     }
                     .font(.body)
-                    
+
                     if !requirement.testCases.isEmpty {
                         VStack(alignment: .leading) {
                             Text("Test Case:")
@@ -34,7 +34,7 @@ struct RequirementView: View {
                             }
                         }
                     }
-                    
+
                     VStack(alignment: .leading) {
                         Text("Descrição:")
                             .fontWeight(.bold)

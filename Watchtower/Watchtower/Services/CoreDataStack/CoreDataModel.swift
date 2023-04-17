@@ -16,22 +16,22 @@ extension CoreDataModel where Self: NSManagedObject {
     static var context: NSManagedObjectContext {
         return CoreDataStack.shared.mainContext
     }
-    
+
     static func newObject() -> Self {
         return self.init(context: context)
     }
-    
-    func destroy(){
+
+    func destroy() {
         Self.context.delete(self)
     }
-    
+
     static func all() -> [Self] {
         let request = NSFetchRequest<Self>(entityName: self.className)
         guard let result = try? context.fetch(request) else {
             return [] }
         return result
     }
-    
+
     static func find(query: String, arguments: [Any]? = nil) -> [Self] {
         let query = NSPredicate(format: query, argumentArray: arguments)
         let request = NSFetchRequest<Self>(entityName: self.className)

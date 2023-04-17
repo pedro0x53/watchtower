@@ -26,7 +26,8 @@ struct LoginView<ViewModel>: View where ViewModel: LoginViewModelTemplate {
                     Spacer()
 
                     NavigationLink {
-                        DashboardView()
+                        DashboardView(viewModel: DashboardViewModel(store: StorageService(),
+                                                                    stack: CoreDataStack.shared))
                             .onAppear {
                                 viewModel.startNewSession()
                             }
