@@ -13,6 +13,8 @@ struct NewProjectView<ViewModel>: View where ViewModel: NewProjectViewModelTempl
 
     @ObservedObject var viewModel: ViewModel
 
+    @Binding var isPresented: Bool
+
     var body: some View {
         NavigationStack {
             ScrollView(.vertical) {
@@ -33,7 +35,7 @@ struct NewProjectView<ViewModel>: View where ViewModel: NewProjectViewModelTempl
             .padding(16)
             .toolbar {
                 Button {
-                    print("Save new Project")
+                    saveAction()
                 } label: {
                     Text("Salvar")
                         .fontWeight(.bold)
@@ -45,13 +47,15 @@ struct NewProjectView<ViewModel>: View where ViewModel: NewProjectViewModelTempl
 
     func saveAction() {
         viewModel.createNewProject(named: name, level: level)
+        isPresented = false
     }
 }
 
 struct NewAppView_Previews: PreviewProvider {
     static var previews: some View {
         NewProjectView(viewModel: NewProjectViewModel(stack: CoreDataStack.shared,
-                                                      store: StorageService()))
+                                                      store: StorageService()),
+                       isPresented: .constant(true))
             .tint(.flame)
     }
 }

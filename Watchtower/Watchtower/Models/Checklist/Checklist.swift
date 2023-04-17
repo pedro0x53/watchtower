@@ -8,6 +8,6 @@
 import Foundation
 
 struct Checklist: Codable, Identifiable {
-    let id: String
+    var id: String?
     var verifications: [Verification]
 }

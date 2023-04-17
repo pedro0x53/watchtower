@@ -17,7 +17,7 @@ struct DashboardView<ViewModel>: View where ViewModel: DashboardViewModelTemplat
             ScrollView {
                 LazyVGrid(columns: [GridItem()], spacing: 16) {
                     ForEach(viewModel.checklists) { checklist in
-                        if let project = viewModel.getProjectforID(id: checklist.id) {
+                        if let project = viewModel.getProjectforID(id: checklist.id!) {
                             NavigationLink {
                                 ProjectView(project: project,
                                             checklist: checklist)
@@ -50,7 +50,8 @@ struct DashboardView<ViewModel>: View where ViewModel: DashboardViewModelTemplat
             },
             content: {
                 NewProjectView(viewModel: NewProjectViewModel(stack: CoreDataStack.shared,
-                                                              store: StorageService()))
+                                                              store: StorageService()),
+                               isPresented: $isCreatingNewApp)
             }
         )
     }

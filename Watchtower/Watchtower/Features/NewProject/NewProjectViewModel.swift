@@ -27,7 +27,9 @@ class NewProjectViewModel: NewProjectViewModelTemplate {
         else { return }
 
         let checklist = Project(context: stack.mainContext)
+        checklist.identifier = checklistID
         checklist.name = name
+        checklist.ownerID = KeysService.get(.sessionID) as? String
         checklist.rawLevel = Int16(level.rawValue)
 
         stack.saveContext()
