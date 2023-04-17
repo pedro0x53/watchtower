@@ -17,6 +17,7 @@
 		FE8FB8BB29EC37E60029A9DA /* ActiveRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8FB8BA29EC37E60029A9DA /* ActiveRecord.swift */; };
 		FE8FB8BE29EC38840029A9DA /* CoreDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8FB8BD29EC38840029A9DA /* CoreDataModel.swift */; };
 		FE8FB8C029EC3B180029A9DA /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8FB8BF29EC3B180029A9DA /* NSObject.swift */; };
+		FE8FB8C429ED63600029A9DA /* NewProjectViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8FB8C329ED63600029A9DA /* NewProjectViewModel.swift */; };
 		FE9B8AAF29CC86670084BD24 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9B8AAE29CC86670084BD24 /* LoginView.swift */; };
 		FE9B8AB729CCC1830084BD24 /* PrimaryActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9B8AB629CCC1830084BD24 /* PrimaryActionButton.swift */; };
 		FE9B8ABC29CCC52F0084BD24 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9B8ABB29CCC52F0084BD24 /* Color.swift */; };
@@ -58,6 +59,7 @@
 		FE8FB8BA29EC37E60029A9DA /* ActiveRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveRecord.swift; sourceTree = "<group>"; };
 		FE8FB8BD29EC38840029A9DA /* CoreDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataModel.swift; sourceTree = "<group>"; };
 		FE8FB8BF29EC3B180029A9DA /* NSObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObject.swift; sourceTree = "<group>"; };
+		FE8FB8C329ED63600029A9DA /* NewProjectViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewProjectViewModel.swift; sourceTree = "<group>"; };
 		FE9B8AAE29CC86670084BD24 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		FE9B8AB629CCC1830084BD24 /* PrimaryActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryActionButton.swift; sourceTree = "<group>"; };
 		FE9B8ABB29CCC52F0084BD24 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
@@ -310,6 +312,7 @@
 			isa = PBXGroup;
 			children = (
 				FEFF7A4429E30D4500913B92 /* View */,
+				FE8FB8C329ED63600029A9DA /* NewProjectViewModel.swift */,
 			);
 			path = NewProject;
 			sourceTree = "<group>";
@@ -498,6 +501,7 @@
 				FEFF7A5529E3425E00913B92 /* Requirement.swift in Sources */,
 				FEFF7A6529E3639800913B92 /* CheckBoxToggleStyle.swift in Sources */,
 				FEFF7A6329E360FA00913B92 /* RequirementRowView.swift in Sources */,
+				FE8FB8C429ED63600029A9DA /* NewProjectViewModel.swift in Sources */,
 				FEFF7A4829E30DC500913B92 /* LabeledTextField.swift in Sources */,
 				FE8FB8B629EC35470029A9DA /* Watchtower.xcdatamodeld in Sources */,
 				FEFF7A5729E347F300913B92 /* Verification.swift in Sources */,

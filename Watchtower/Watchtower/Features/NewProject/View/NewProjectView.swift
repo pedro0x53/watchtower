@@ -7,9 +7,11 @@
 
 import SwiftUI
 
-struct NewAppView: View {
+struct NewAppView<ViewModel>: View where ViewModel: NewProjectViewModelTemplate {
     @State var name: String = ""
     @State var level: VerificationLevel = .l1
+
+    @ObservedObject var viewModel: ViewModel
 
     var body: some View {
         NavigationStack {
@@ -40,11 +42,16 @@ struct NewAppView: View {
             }
         }
     }
+
+    func saveAction() {
+        viewModel.createNewProject(named: name, level: level)
+    }
 }
 
 struct NewAppView_Previews: PreviewProvider {
     static var previews: some View {
-        NewAppView(name: "", level: .l1)
+        NewAppView(viewModel: NewProjectViewModel(stack: CoreDataStack.shared,
+                                                  store: StorageService()))
             .tint(.flame)
     }
 }
