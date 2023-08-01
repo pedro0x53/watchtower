@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE27F89D29F6C52600D958D1 /* L2+R.json in Resources */ = {isa = PBXBuildFile; fileRef = FE27F89A29F6C52600D958D1 /* L2+R.json */; };
+		FE27F89E29F6C52600D958D1 /* L1.json in Resources */ = {isa = PBXBuildFile; fileRef = FE27F89B29F6C52600D958D1 /* L1.json */; };
+		FE27F89F29F6C52600D958D1 /* L1+R.json in Resources */ = {isa = PBXBuildFile; fileRef = FE27F89C29F6C52600D958D1 /* L1+R.json */; };
 		FE4E7A4429C4B2AD00325835 /* WatchtowerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4E7A4329C4B2AD00325835 /* WatchtowerApp.swift */; };
 		FE4E7A4829C4B2AE00325835 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE4E7A4729C4B2AE00325835 /* Assets.xcassets */; };
 		FE4E7A4B29C4B2AE00325835 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE4E7A4A29C4B2AE00325835 /* Preview Assets.xcassets */; };
@@ -20,10 +23,6 @@
 		FE8FB8C429ED63600029A9DA /* NewProjectViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8FB8C329ED63600029A9DA /* NewProjectViewModel.swift */; };
 		FE8FB8C629ED6DF00029A9DA /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8FB8C529ED6DF00029A9DA /* DashboardViewModel.swift */; };
 		FE8FB8C829ED72EB0029A9DA /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8FB8C729ED72EB0029A9DA /* Project.swift */; };
-		FE8FB8CF29ED79110029A9DA /* L2+R.json in Resources */ = {isa = PBXBuildFile; fileRef = FE8FB8CB29ED79110029A9DA /* L2+R.json */; };
-		FE8FB8D029ED79110029A9DA /* L1+R.json in Resources */ = {isa = PBXBuildFile; fileRef = FE8FB8CC29ED79110029A9DA /* L1+R.json */; };
-		FE8FB8D129ED79110029A9DA /* L1.json in Resources */ = {isa = PBXBuildFile; fileRef = FE8FB8CD29ED79110029A9DA /* L1.json */; };
-		FE8FB8D229ED79110029A9DA /* L2.json in Resources */ = {isa = PBXBuildFile; fileRef = FE8FB8CE29ED79110029A9DA /* L2.json */; };
 		FE9B8AAF29CC86670084BD24 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9B8AAE29CC86670084BD24 /* LoginView.swift */; };
 		FE9B8AB729CCC1830084BD24 /* PrimaryActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9B8AB629CCC1830084BD24 /* PrimaryActionButton.swift */; };
 		FE9B8ABC29CCC52F0084BD24 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9B8ABB29CCC52F0084BD24 /* Color.swift */; };
@@ -54,6 +53,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FE27F89A29F6C52600D958D1 /* L2+R.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "L2+R.json"; sourceTree = "<group>"; };
+		FE27F89B29F6C52600D958D1 /* L1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = L1.json; sourceTree = "<group>"; };
+		FE27F89C29F6C52600D958D1 /* L1+R.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "L1+R.json"; sourceTree = "<group>"; };
+		FE27F8A029F6C55000D958D1 /* L2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = L2.json; sourceTree = "<group>"; };
 		FE4E7A4029C4B2AD00325835 /* Watchtower.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Watchtower.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE4E7A4329C4B2AD00325835 /* WatchtowerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchtowerApp.swift; sourceTree = "<group>"; };
 		FE4E7A4729C4B2AE00325835 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -68,10 +71,6 @@
 		FE8FB8C329ED63600029A9DA /* NewProjectViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewProjectViewModel.swift; sourceTree = "<group>"; };
 		FE8FB8C529ED6DF00029A9DA /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
 		FE8FB8C729ED72EB0029A9DA /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
-		FE8FB8CB29ED79110029A9DA /* L2+R.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "L2+R.json"; path = "../../../../../../Desktop/L2+R.json"; sourceTree = "<group>"; };
-		FE8FB8CC29ED79110029A9DA /* L1+R.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "L1+R.json"; path = "../../../../../../Desktop/L1+R.json"; sourceTree = "<group>"; };
-		FE8FB8CD29ED79110029A9DA /* L1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = L1.json; path = ../../../../../../Desktop/L1.json; sourceTree = "<group>"; };
-		FE8FB8CE29ED79110029A9DA /* L2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = L2.json; path = ../../../../../../Desktop/L2.json; sourceTree = "<group>"; };
 		FE9B8AAE29CC86670084BD24 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		FE9B8AB629CCC1830084BD24 /* PrimaryActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryActionButton.swift; sourceTree = "<group>"; };
 		FE9B8ABB29CCC52F0084BD24 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
@@ -190,10 +189,10 @@
 		FE8FB8CA29ED78FF0029A9DA /* VerificationLevels */ = {
 			isa = PBXGroup;
 			children = (
-				FE8FB8CD29ED79110029A9DA /* L1.json */,
-				FE8FB8CC29ED79110029A9DA /* L1+R.json */,
-				FE8FB8CE29ED79110029A9DA /* L2.json */,
-				FE8FB8CB29ED79110029A9DA /* L2+R.json */,
+				FE27F89B29F6C52600D958D1 /* L1.json */,
+				FE27F89C29F6C52600D958D1 /* L1+R.json */,
+				FE27F8A029F6C55000D958D1 /* L2.json */,
+				FE27F89A29F6C52600D958D1 /* L2+R.json */,
 			);
 			path = VerificationLevels;
 			sourceTree = "<group>";
@@ -478,12 +477,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE27F89D29F6C52600D958D1 /* L2+R.json in Resources */,
 				FE4E7A4B29C4B2AE00325835 /* Preview Assets.xcassets in Resources */,
-				FE8FB8CF29ED79110029A9DA /* L2+R.json in Resources */,
-				FE8FB8D129ED79110029A9DA /* L1.json in Resources */,
-				FE8FB8D229ED79110029A9DA /* L2.json in Resources */,
+				FE27F89E29F6C52600D958D1 /* L1.json in Resources */,
 				FE4E7A4829C4B2AE00325835 /* Assets.xcassets in Resources */,
-				FE8FB8D029ED79110029A9DA /* L1+R.json in Resources */,
+				FE27F89F29F6C52600D958D1 /* L1+R.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

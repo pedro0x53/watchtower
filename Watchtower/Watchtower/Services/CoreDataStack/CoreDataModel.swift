@@ -27,8 +27,7 @@ extension CoreDataModel where Self: NSManagedObject {
 
     static func all() -> [Self] {
         let request = NSFetchRequest<Self>(entityName: self.className)
-        guard let result = try? context.fetch(request) else {
-            return [] }
+        guard let result = try? context.fetch(request) else { return [] }
         return result
     }
 
