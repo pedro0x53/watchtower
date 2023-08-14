@@ -25,3 +25,5 @@ struct InfoView_Previews: PreviewProvider {
         InfoView()
     }
 }
+
+// swiftlint:enable line_length

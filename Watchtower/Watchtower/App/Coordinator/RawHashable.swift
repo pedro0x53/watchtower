@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+protocol RawHashable: RawRepresentable, Hashable {}
+
+extension RawHashable where Self.RawValue == String {
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(self.rawValue)
+    }
+}

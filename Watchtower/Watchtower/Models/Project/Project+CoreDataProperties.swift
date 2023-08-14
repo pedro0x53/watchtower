@@ -20,6 +20,6 @@ extension Project {
     @NSManaged public var rawLevel: Int16
 }
 
-extension Project : Identifiable {}
+extension Project: Identifiable {}
 
 extension Project: CoreDataModel {}

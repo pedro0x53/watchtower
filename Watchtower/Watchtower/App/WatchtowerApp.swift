@@ -9,18 +9,16 @@ import SwiftUI
 
 @main
 struct WatchtowerApp: App {
+    @StateObject var appCoordinator = AppCoordinator(isLoggedIn: KeysService.has(key: .sessionID))
+    @StateObject var state = AppState()
+
     var body: some Scene {
         WindowGroup {
-            NavigationStack {
-                if KeysService.get(.sessionID) == nil {
-                    LoginView(viewModel: LoginViewModel())
-                } else {
-                    DashboardView(viewModel: DashboardViewModel(store: StorageService(),
-                                                                stack: CoreDataStack.shared))
-                }
+            NavigationStack(path: $appCoordinator.path) {
+                appCoordinator.build()
             }
             .tint(.flame)
-            .environmentObject(AppState())
+            .environmentObject(state)
         }
     }
 }

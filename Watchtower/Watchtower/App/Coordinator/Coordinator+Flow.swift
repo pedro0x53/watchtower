@@ -1,22 +1,29 @@
 //
-//  Coordinator.swift
+//  Coordinator+Route+FlowBuidler.swift
 //  Watchtower
 //
 //  Created by Pedro Sousa on 11/08/23.
 //
 
 import SwiftUI
-import Combine
 
-protocol FlowBuilder: AnyObject, Identifiable, Hashable, ObservableObject {
+// TODO: Add suport to presenting views
+
+public protocol FlowBuilder: AnyObject, Identifiable, Hashable, ObservableObject {
     associatedtype Build: View
     @ViewBuilder func build() -> Build
+}
+
+public extension Hashable where Self: FlowBuilder {
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(self.id)
+    }
 }
 
 protocol Route: FlowBuilder {
     associatedtype Coordinates
 
-    var parent: any Coordinator { get }
+    var coordinator: any Coordinator { get }
 
     func push(to coordinate: Coordinates)
     func pop()

@@ -30,3 +30,5 @@ enum VerificationLevel: Int, CustomStringConvertible, CaseIterable, Identifiable
         }
     }
 }
+
+// swiftlint:enable identifier_name

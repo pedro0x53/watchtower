@@ -11,19 +11,20 @@ import Combine
 class AppCoordinator: Coordinator {
     let id: UUID = .init()
 
-    var path: NavigationPath = NavigationPath()
+    @Published var path: NavigationPath
     var isLoggedIn: Bool
 
-    init(isLoggedIn: Bool) {
+    init(path: NavigationPath = .init(), isLoggedIn: Bool) {
         self.isLoggedIn = isLoggedIn
+        self.path = path
     }
 
-    func hash(into hasher: inout Hasher) {
-        hasher.combine(id)
+    func push<R: Route>(_ route: R) {
+        self.path.append(route)
     }
 
-    static func == (lhs: AppCoordinator, rhs: AppCoordinator) -> Bool {
-        lhs.id == rhs.id
+    func pop() {
+        self.path.removeLast()
     }
 
     @ViewBuilder func build() -> some View {
@@ -36,15 +37,26 @@ class AppCoordinator: Coordinator {
 
     private func buildLogin() -> some View {
         LoginView(viewModel: LoginViewModel(),
-                  coordinator: LoginCoordinator())
+                  router: .init(coordinator: self))
+        .navigationDestination(for: DashboardRoute.self) { route in
+            route.build()
+        }
     }
 
     private func buildDashboard() -> some View {
-        DashboardView(viewModel: DashboardViewModel(store: .init(),
-                                                    stack: .shared),
-                      coordinator: .init())
-        .onAppear {
-            KeysService.set(UUID(), for: .sessionID)
-        }
+        DashboardView(viewModel: DashboardViewModel(store: .init(), stack: .shared),
+                      router: .init(coordinator: self))
+//        TODO: ProjectRoute
+//        .navigationDestination(for: ProjectRoute.self) { route in
+//            route.build()
+//        }
+    }
+}
+
+extension AppCoordinator {
+    static func == (lhs: AppCoordinator, rhs: AppCoordinator) -> Bool {
+        lhs.isLoggedIn == rhs.isLoggedIn &&
+        lhs.path == rhs.path &&
+        lhs.id == rhs.id
     }
 }

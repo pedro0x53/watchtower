@@ -12,35 +12,33 @@ enum LoginCoodinates: String, RawHashable {
     case dashboard
 }
 
-final class LoginRoute<Parent: Coordinator>: Coordinator {
+final class LoginRoute: Route {
     let id: UUID = .init()
-    let parent: Parent
+    var coordinator: any Coordinator
 
-    init(parent: Parent) {
-        self.parent = parent
+    init(coordinator: any Coordinator) {
+        self.coordinator = coordinator
     }
 
-    func hash(into hasher: inout Hasher) {
-        hasher.combine(id)
+    func push(to coordinate: LoginCoodinates) {
+        self.coordinator.push(DashboardRoute(coordinator: self.coordinator))
     }
 
-    static func == (lhs: LoginRoute, rhs: LoginRoute) -> Bool {
-        lhs.id == rhs.id
+    func pop() {
+        self.coordinator.pop()
     }
 
     @ViewBuilder func build() -> some View {
         LoginView(viewModel: LoginViewModel(),
-                  coordinator: self)
-        .navigationDestination(for: DashboardCoordinator.self) { coordinator in
-            coordinator.build()
+                  router: self)
+        .navigationDestination(for: DashboardRoute.self) { route in
+            route.build()
         }
     }
+}
 
-    func push<C>(_ coordinator: C) where C : Coordinator {
-        self.parent.push(coordinator)
-    }
-
-    func pop() {
-        self.parent.pop()
+extension LoginRoute {
+    static func == (lhs: LoginRoute, rhs: LoginRoute) -> Bool {
+        lhs.id == rhs.id
     }
 }

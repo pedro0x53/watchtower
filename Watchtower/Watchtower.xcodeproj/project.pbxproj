@@ -7,12 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE03152C2A79BDDE00633D91 /* Project+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE03152A2A79BDDE00633D91 /* Project+CoreDataClass.swift */; };
+		FE03152D2A79BDDE00633D91 /* Project+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE03152B2A79BDDE00633D91 /* Project+CoreDataProperties.swift */; };
+		FE0315742A86A05F00633D91 /* Coordinator+Flow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0315732A86A05F00633D91 /* Coordinator+Flow.swift */; };
+		FE0315762A86A08100633D91 /* RawHashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0315752A86A08100633D91 /* RawHashable.swift */; };
+		FE0315782A86A10F00633D91 /* LoginRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0315772A86A10F00633D91 /* LoginRoute.swift */; };
+		FE03157A2A86A14000633D91 /* DashboardRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0315792A86A14000633D91 /* DashboardRoute.swift */; };
 		FE27F89D29F6C52600D958D1 /* L2+R.json in Resources */ = {isa = PBXBuildFile; fileRef = FE27F89A29F6C52600D958D1 /* L2+R.json */; };
 		FE27F89E29F6C52600D958D1 /* L1.json in Resources */ = {isa = PBXBuildFile; fileRef = FE27F89B29F6C52600D958D1 /* L1.json */; };
 		FE27F89F29F6C52600D958D1 /* L1+R.json in Resources */ = {isa = PBXBuildFile; fileRef = FE27F89C29F6C52600D958D1 /* L1+R.json */; };
 		FE4E7A4429C4B2AD00325835 /* WatchtowerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4E7A4329C4B2AD00325835 /* WatchtowerApp.swift */; };
 		FE4E7A4829C4B2AE00325835 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE4E7A4729C4B2AE00325835 /* Assets.xcassets */; };
 		FE4E7A4B29C4B2AE00325835 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE4E7A4A29C4B2AE00325835 /* Preview Assets.xcassets */; };
+		FE85105C2A799F6D000FC44C /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE85105B2A799F6D000FC44C /* AppCoordinator.swift */; };
 		FE8FB8B029EC1F720029A9DA /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8FB8AF29EC1F720029A9DA /* LoginViewModel.swift */; };
 		FE8FB8B229EC31C50029A9DA /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8FB8B129EC31C50029A9DA /* StorageService.swift */; };
 		FE8FB8B629EC35470029A9DA /* Watchtower.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FE8FB8B429EC35470029A9DA /* Watchtower.xcdatamodeld */; };
@@ -22,7 +29,6 @@
 		FE8FB8C029EC3B180029A9DA /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8FB8BF29EC3B180029A9DA /* NSObject.swift */; };
 		FE8FB8C429ED63600029A9DA /* NewProjectViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8FB8C329ED63600029A9DA /* NewProjectViewModel.swift */; };
 		FE8FB8C629ED6DF00029A9DA /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8FB8C529ED6DF00029A9DA /* DashboardViewModel.swift */; };
-		FE8FB8C829ED72EB0029A9DA /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8FB8C729ED72EB0029A9DA /* Project.swift */; };
 		FE9B8AAF29CC86670084BD24 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9B8AAE29CC86670084BD24 /* LoginView.swift */; };
 		FE9B8AB729CCC1830084BD24 /* PrimaryActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9B8AB629CCC1830084BD24 /* PrimaryActionButton.swift */; };
 		FE9B8ABC29CCC52F0084BD24 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9B8ABB29CCC52F0084BD24 /* Color.swift */; };
@@ -53,6 +59,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FE03152A2A79BDDE00633D91 /* Project+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Project+CoreDataClass.swift"; path = "Watchtower/Models/Project/Project+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		FE03152B2A79BDDE00633D91 /* Project+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Project+CoreDataProperties.swift"; path = "Watchtower/Models/Project/Project+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		FE0315732A86A05F00633D91 /* Coordinator+Flow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Coordinator+Flow.swift"; sourceTree = "<group>"; };
+		FE0315752A86A08100633D91 /* RawHashable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawHashable.swift; sourceTree = "<group>"; };
+		FE0315772A86A10F00633D91 /* LoginRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRoute.swift; sourceTree = "<group>"; };
+		FE0315792A86A14000633D91 /* DashboardRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardRoute.swift; sourceTree = "<group>"; };
 		FE27F89A29F6C52600D958D1 /* L2+R.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "L2+R.json"; sourceTree = "<group>"; };
 		FE27F89B29F6C52600D958D1 /* L1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = L1.json; sourceTree = "<group>"; };
 		FE27F89C29F6C52600D958D1 /* L1+R.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "L1+R.json"; sourceTree = "<group>"; };
@@ -61,6 +73,7 @@
 		FE4E7A4329C4B2AD00325835 /* WatchtowerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchtowerApp.swift; sourceTree = "<group>"; };
 		FE4E7A4729C4B2AE00325835 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE4E7A4A29C4B2AE00325835 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FE85105B2A799F6D000FC44C /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		FE8FB8AF29EC1F720029A9DA /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		FE8FB8B129EC31C50029A9DA /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
 		FE8FB8B529EC35470029A9DA /* Watchtower.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Watchtower.xcdatamodel; sourceTree = "<group>"; };
@@ -70,7 +83,6 @@
 		FE8FB8BF29EC3B180029A9DA /* NSObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObject.swift; sourceTree = "<group>"; };
 		FE8FB8C329ED63600029A9DA /* NewProjectViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewProjectViewModel.swift; sourceTree = "<group>"; };
 		FE8FB8C529ED6DF00029A9DA /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
-		FE8FB8C729ED72EB0029A9DA /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
 		FE9B8AAE29CC86670084BD24 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		FE9B8AB629CCC1830084BD24 /* PrimaryActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryActionButton.swift; sourceTree = "<group>"; };
 		FE9B8ABB29CCC52F0084BD24 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
@@ -111,6 +123,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FE03152E2A79C0E800633D91 /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				FE03152A2A79BDDE00633D91 /* Project+CoreDataClass.swift */,
+				FE03152B2A79BDDE00633D91 /* Project+CoreDataProperties.swift */,
+			);
+			path = Project;
+			sourceTree = "<group>";
+		};
+		FE0315702A86A04500633D91 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				FE0315732A86A05F00633D91 /* Coordinator+Flow.swift */,
+				FE85105B2A799F6D000FC44C /* AppCoordinator.swift */,
+				FE0315752A86A08100633D91 /* RawHashable.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
 		FE4E7A3729C4B2AD00325835 = {
 			isa = PBXGroup;
 			children = (
@@ -200,6 +231,7 @@
 		FE9B8AAB29CC86330084BD24 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				FE0315702A86A04500633D91 /* Coordinator */,
 				FE4E7A4329C4B2AD00325835 /* WatchtowerApp.swift */,
 				FEFF7A2D29E201C100913B92 /* AppState.swift */,
 			);
@@ -223,6 +255,7 @@
 			isa = PBXGroup;
 			children = (
 				FE9B8AC229CCCC270084BD24 /* View */,
+				FE0315772A86A10F00633D91 /* LoginRoute.swift */,
 				FE8FB8AF29EC1F720029A9DA /* LoginViewModel.swift */,
 			);
 			path = Login;
@@ -289,10 +322,10 @@
 		FEFF7A2F29E201E900913B92 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				FE03152E2A79C0E800633D91 /* Project */,
 				FE8FB8C229EC453F0029A9DA /* Checklist */,
 				FEFF7A3029E201F100913B92 /* Session.swift */,
 				FEFF7A3F29E302D900913B92 /* VerificationLevel.swift */,
-				FE8FB8C729ED72EB0029A9DA /* Project.swift */,
 				FE8FB8B429EC35470029A9DA /* Watchtower.xcdatamodeld */,
 			);
 			path = Models;
@@ -302,6 +335,7 @@
 			isa = PBXGroup;
 			children = (
 				FEFF7A3329E2042C00913B92 /* View */,
+				FE0315792A86A14000633D91 /* DashboardRoute.swift */,
 				FE8FB8C529ED6DF00029A9DA /* DashboardViewModel.swift */,
 			);
 			path = Dashboard;
@@ -490,6 +524,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		FE9B8ACB29D094FA0084BD24 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
@@ -514,6 +549,8 @@
 			files = (
 				FEFF7A3529E2043A00913B92 /* DashboardView.swift in Sources */,
 				FE8FB8B229EC31C50029A9DA /* StorageService.swift in Sources */,
+				FE0315762A86A08100633D91 /* RawHashable.swift in Sources */,
+				FE0315742A86A05F00633D91 /* Coordinator+Flow.swift in Sources */,
 				FE9B8AC629CCCC980084BD24 /* LogoView.swift in Sources */,
 				FE9B8ABC29CCC52F0084BD24 /* Color.swift in Sources */,
 				FEFF7A3C29E2398200913B92 /* AppCardView.swift in Sources */,
@@ -521,12 +558,15 @@
 				FE8FB8BB29EC37E60029A9DA /* ActiveRecord.swift in Sources */,
 				FE8FB8B829EC36A00029A9DA /* CoreDataStack.swift in Sources */,
 				FE9B8AAF29CC86670084BD24 /* LoginView.swift in Sources */,
+				FE03152D2A79BDDE00633D91 /* Project+CoreDataProperties.swift in Sources */,
+				FE03152C2A79BDDE00633D91 /* Project+CoreDataClass.swift in Sources */,
 				FEFF7A5329E3422F00913B92 /* RequirementView.swift in Sources */,
 				FE8FB8B029EC1F720029A9DA /* LoginViewModel.swift in Sources */,
 				FE8FB8C629ED6DF00029A9DA /* DashboardViewModel.swift in Sources */,
 				FEFF7A4629E30D5300913B92 /* NewProjectView.swift in Sources */,
 				FEFF7A4B29E3108700913B92 /* VerificationLevelView.swift in Sources */,
 				FEFF7A3929E2045500913B92 /* InfoView.swift in Sources */,
+				FE85105C2A799F6D000FC44C /* AppCoordinator.swift in Sources */,
 				FEFF7A4D29E310CF00913B92 /* VerificationLevelStackView.swift in Sources */,
 				FEFF7A6029E35F8B00913B92 /* ProjectView.swift in Sources */,
 				FE9B8ACE29D099110084BD24 /* KeysService.swift in Sources */,
@@ -537,7 +577,6 @@
 				FEFF7A2E29E201C100913B92 /* AppState.swift in Sources */,
 				FEFF7A5529E3425E00913B92 /* Requirement.swift in Sources */,
 				FEFF7A6529E3639800913B92 /* CheckBoxToggleStyle.swift in Sources */,
-				FE8FB8C829ED72EB0029A9DA /* Project.swift in Sources */,
 				FEFF7A6329E360FA00913B92 /* RequirementRowView.swift in Sources */,
 				FE8FB8C429ED63600029A9DA /* NewProjectViewModel.swift in Sources */,
 				FEFF7A4829E30DC500913B92 /* LabeledTextField.swift in Sources */,
@@ -548,6 +587,8 @@
 				FEFF7A3129E201F100913B92 /* Session.swift in Sources */,
 				FE9B8AC429CCCC370084BD24 /* BackgroundCastleView.swift in Sources */,
 				FE4E7A4429C4B2AD00325835 /* WatchtowerApp.swift in Sources */,
+				FE0315782A86A10F00633D91 /* LoginRoute.swift in Sources */,
+				FE03157A2A86A14000633D91 /* DashboardRoute.swift in Sources */,
 				FEFF7A6729E36B7D00913B92 /* Checklist.swift in Sources */,
 				FE9B8AB729CCC1830084BD24 /* PrimaryActionButton.swift in Sources */,
 			);
