@@ -11,8 +11,6 @@ struct DashboardView<ViewModel>: View where ViewModel: DashboardViewModelTemplat
     @ObservedObject var viewModel: ViewModel
     @ObservedObject var router: DashboardRoute
 
-    @State private var isCreatingNewApp: Bool = false
-
     var body: some View {
         ScrollView {
             LazyVGrid(columns: [GridItem()], spacing: 16) {
@@ -35,22 +33,19 @@ struct DashboardView<ViewModel>: View where ViewModel: DashboardViewModelTemplat
         .navigationTitle("Projetos")
         .toolbar {
             Button {
-                isCreatingNewApp = true
+                router.isPresentingProjectEditor = true
             } label: {
                 Image(systemName: "plus")
             }
         }
         .ignoresSafeArea(.all, edges: .bottom)
         .navigationBarBackButtonHidden(true)
-        .sheet(isPresented: $isCreatingNewApp,
+        .sheet(isPresented: $router.isPresentingProjectEditor,
             onDismiss: {
                 viewModel.update()
             },
             content: {
-                NewProjectView(
-                    viewModel: NewProjectViewModel(stack: .shared,
-                                                   store: .init()),
-                    isPresented: $isCreatingNewApp)
+                router.present(sheet: .projectEditor)
             }
         )
     }

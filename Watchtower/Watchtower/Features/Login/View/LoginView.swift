@@ -38,12 +38,10 @@ struct LoginView<ViewModel>: View where ViewModel: LoginViewModelTemplate {
                 Spacer()
 
                 SecondaryActionButton("O que é a Sessão Local?") {
-                    shouldShowInfo = true
+                    router.isPresentingInfo = true
                 }
-                .sheet(isPresented: $shouldShowInfo, content: {
-                    InfoView()
-                        .presentationDetents([.fraction(2/5)])
-                        .presentationDragIndicator(.visible)
+                .sheet(isPresented: $router.isPresentingInfo, content: {
+                    router.present(sheet: .info)
                 })
             }
         }

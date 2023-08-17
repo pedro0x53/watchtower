@@ -12,8 +12,7 @@ struct NewProjectView<ViewModel>: View where ViewModel: NewProjectViewModelTempl
     @State var level: VerificationLevel = .l1
 
     @ObservedObject var viewModel: ViewModel
-
-    @Binding var isPresented: Bool
+    @ObservedObject var router: DashboardRoute
 
     var body: some View {
         NavigationStack {
@@ -34,20 +33,30 @@ struct NewProjectView<ViewModel>: View where ViewModel: NewProjectViewModelTempl
             }
             .padding(16)
             .toolbar {
-                Button {
-                    saveAction()
-                } label: {
-                    Text("Salvar")
-                        .fontWeight(.bold)
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button {
+                        saveAction()
+                    } label: {
+                        Text("Salvar")
+                            .fontWeight(.bold)
+                    }
                 }
 
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Button {
+                        router.isPresentingProjectEditor = false
+                    } label: {
+                        Text("Cancelar")
+                            .fontWeight(.bold)
+                    }
+                }
             }
         }
     }
 
     func saveAction() {
         viewModel.createNewProject(named: name, level: level)
-        isPresented = false
+        router.isPresentingProjectEditor = false
     }
 }
 
@@ -55,7 +64,7 @@ struct NewAppView_Previews: PreviewProvider {
     static var previews: some View {
         NewProjectView(viewModel: NewProjectViewModel(stack: CoreDataStack.shared,
                                                       store: StorageService()),
-                       isPresented: .constant(true))
+                       router: DashboardRoute(coordinator: AppCoordinator(isLoggedIn: true)))
             .tint(.flame)
     }
 }

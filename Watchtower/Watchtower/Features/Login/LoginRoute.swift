@@ -6,15 +6,20 @@
 //
 
 import SwiftUI
-import Combine
 
-enum LoginCoodinates: String, RawHashable {
+enum LoginCoodinates {
     case dashboard
+}
+
+enum LoginSheets {
+    case info
 }
 
 final class LoginRoute: Route {
     let id: UUID = .init()
     var coordinator: any Coordinator
+
+    @Published var isPresentingInfo: Bool = false
 
     init(coordinator: any Coordinator) {
         self.coordinator = coordinator
@@ -34,6 +39,18 @@ final class LoginRoute: Route {
         .navigationDestination(for: DashboardRoute.self) { route in
             route.build()
         }
+    }
+}
+
+extension LoginRoute: Presenter {
+    func present(sheet: LoginSheets) -> some View {
+        InfoView()
+            .presentationDetents([.fraction(2/5)])
+            .presentationDragIndicator(.visible)
+    }
+
+    func dismiss(sheet: LoginSheets) {
+        self.isPresentingInfo = false
     }
 }
 

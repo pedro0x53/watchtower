@@ -6,23 +6,31 @@
 //
 
 import SwiftUI
-import Combine
 
-enum DashboardCoordinates: String, RawHashable {
+enum DashboardCoordinates {
     case project
+}
+
+enum DashboardSheets {
+    case projectEditor
 }
 
 class DashboardRoute: Route {
     let id: UUID = .init()
     var coordinator: any Coordinator
 
+    @Published var isPresentingProjectEditor: Bool = false
+
     init(coordinator: any Coordinator) {
         self.coordinator = coordinator
     }
 
-//    TODO: ProjectRoute
-    func push(to coordinate: DashboardCoordinates) {
-//        self.coordinator.push(ProjectRoute(coordinator: self.coordinator))
+    func push(to coordinate: DashboardCoordinates) {}
+
+    func pushToProject(with project: Project, checklist: Checklist) {
+        self.coordinator.push(ProjectRoute(coordinator: self.coordinator,
+                                           project: project,
+                                           checklist: checklist))
     }
 
     func pop() {
@@ -32,10 +40,20 @@ class DashboardRoute: Route {
     @ViewBuilder func build() -> some View {
         DashboardView(viewModel: DashboardViewModel(store: .init(), stack: .shared),
                       router: self)
-//        TODO: ProjectRoute
-//        .navigationDestination(for: ProjectRoute.self) { router in
-//            router.build()
-//        }
+        .navigationDestination(for: ProjectRoute.self) { router in
+            router.build()
+        }
+    }
+}
+
+extension DashboardRoute: Presenter {
+    func present(sheet: DashboardSheets) -> some View {
+        NewProjectView(viewModel: NewProjectViewModel(stack: .shared, store: .init()),
+                       router: self)
+    }
+
+    func dismiss(sheet: DashboardSheets) {
+        self.isPresentingProjectEditor = false
     }
 }
 
