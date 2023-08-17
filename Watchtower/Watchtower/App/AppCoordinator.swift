@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import Combine
 
 class AppCoordinator: Coordinator {
     let id: UUID = .init()
@@ -46,10 +45,9 @@ class AppCoordinator: Coordinator {
     private func buildDashboard() -> some View {
         DashboardView(viewModel: DashboardViewModel(store: .init(), stack: .shared),
                       router: .init(coordinator: self))
-//        TODO: ProjectRoute
-//        .navigationDestination(for: ProjectRoute.self) { route in
-//            route.build()
-//        }
+        .navigationDestination(for: ProjectRoute.self) { route in
+            route.build()
+        }
     }
 }
 
