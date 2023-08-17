@@ -9,49 +9,43 @@ import SwiftUI
 
 struct DashboardView<ViewModel>: View where ViewModel: DashboardViewModelTemplate {
     @ObservedObject var viewModel: ViewModel
-
-    @State private var isCreatingNewApp: Bool = false
+    @ObservedObject var router: DashboardRoute
 
     var body: some View {
-        NavigationStack {
-            ScrollView {
-                LazyVGrid(columns: [GridItem()], spacing: 16) {
-                    ForEach(viewModel.checklists) { checklist in
-                        if let project = viewModel.getProjectforID(id: checklist.id!) {
-                            NavigationLink {
-                                ProjectView(project: project,
-                                            checklist: checklist)
-                            } label: {
-                                AppCardView(name: project.name!,
-                                            level: VerificationLevel(rawValue: Int(project.rawLevel))!,
-                                            percent: 0)
-                            }
+        ScrollView {
+            LazyVGrid(columns: [GridItem()], spacing: 16) {
+                ForEach(viewModel.checklists) { checklist in
+                    if let project = viewModel.getProjectforID(id: checklist.id!) {
+                        NavigationLink {
+                            ProjectView(project: project,
+                                        checklist: checklist)
+                        } label: {
+                            AppCardView(name: project.name!,
+                                        level: VerificationLevel(rawValue: Int(project.rawLevel))!,
+                                        percent: 0)
                         }
                     }
                 }
             }
-            .scrollIndicators(.hidden)
-            .padding(16)
-            .navigationTitle("Projetos")
-            .toolbar {
-                Button {
-                    isCreatingNewApp = true
-                } label: {
-                    Image(systemName: "plus")
-                }
-
-            }
-            .ignoresSafeArea(.all, edges: .bottom)
         }
+        .scrollIndicators(.hidden)
+        .padding(16)
+        .navigationTitle("Projetos")
+        .toolbar {
+            Button {
+                router.isPresentingProjectEditor = true
+            } label: {
+                Image(systemName: "plus")
+            }
+        }
+        .ignoresSafeArea(.all, edges: .bottom)
         .navigationBarBackButtonHidden(true)
-        .sheet(isPresented: $isCreatingNewApp,
+        .sheet(isPresented: $router.isPresentingProjectEditor,
             onDismiss: {
                 viewModel.update()
             },
             content: {
-                NewProjectView(viewModel: NewProjectViewModel(stack: CoreDataStack.shared,
-                                                              store: StorageService()),
-                               isPresented: $isCreatingNewApp)
+                router.present(sheet: .projectEditor)
             }
         )
     }
@@ -59,8 +53,10 @@ struct DashboardView<ViewModel>: View where ViewModel: DashboardViewModelTemplat
 
 struct DashboardView_Previews: PreviewProvider {
     static var previews: some View {
-        DashboardView(viewModel: DashboardViewModel(store: StorageService(),
-                                                    stack: CoreDataStack.shared))
-            .tint(.flame)
+        DashboardView(
+            viewModel: DashboardViewModel(store: .init(), stack: .shared),
+            router: .init(coordinator: AppCoordinator(isLoggedIn: true))
+        )
+        .tint(.flame)
     }
 }

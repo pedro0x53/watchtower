@@ -23,15 +23,11 @@ class NewProjectViewModel: NewProjectViewModelTemplate {
     func createNewProject(named name: String, level: VerificationLevel) {
         let checklistID = UUID().uuidString
 
-        guard store.createChecklist(named: checklistID, withLevel: level)
+        guard store.createChecklist(named: checklistID, withLevel: level),
+              let ownerID = KeysService.get(.sessionID) as? String
         else { return }
 
-        let checklist = Project(context: stack.mainContext)
-        checklist.identifier = checklistID
-        checklist.name = name
-        checklist.ownerID = KeysService.get(.sessionID) as? String
-        checklist.rawLevel = Int16(level.rawValue)
-
-        stack.saveContext()
+        stack.createProject(named: name, id: checklistID,
+                            ownerID: ownerID, level: Int16(level.rawValue))
     }
 }

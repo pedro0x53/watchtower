@@ -7,9 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE03152C2A79BDDE00633D91 /* Project+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE03152A2A79BDDE00633D91 /* Project+CoreDataClass.swift */; };
+		FE03152D2A79BDDE00633D91 /* Project+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE03152B2A79BDDE00633D91 /* Project+CoreDataProperties.swift */; };
+		FE0315782A86A10F00633D91 /* LoginRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0315772A86A10F00633D91 /* LoginRoute.swift */; };
+		FE03157A2A86A14000633D91 /* DashboardRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0315792A86A14000633D91 /* DashboardRoute.swift */; };
+		FE1A2AA42A8E856C009A44DC /* ProjectRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1A2AA32A8E856C009A44DC /* ProjectRoute.swift */; };
+		FE1A2AA62A8EBF02009A44DC /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1A2AA52A8EBF02009A44DC /* Coordinator.swift */; };
+		FE1A2AA82A8EBF0B009A44DC /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1A2AA72A8EBF0B009A44DC /* Presenter.swift */; };
+		FE1A2AAA2A8EBF13009A44DC /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1A2AA92A8EBF13009A44DC /* Route.swift */; };
+		FE1A2AAC2A8EBFA7009A44DC /* Flow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1A2AAB2A8EBFA7009A44DC /* Flow.swift */; };
+		FE27F89D29F6C52600D958D1 /* L2+R.json in Resources */ = {isa = PBXBuildFile; fileRef = FE27F89A29F6C52600D958D1 /* L2+R.json */; };
+		FE27F89E29F6C52600D958D1 /* L1.json in Resources */ = {isa = PBXBuildFile; fileRef = FE27F89B29F6C52600D958D1 /* L1.json */; };
+		FE27F89F29F6C52600D958D1 /* L1+R.json in Resources */ = {isa = PBXBuildFile; fileRef = FE27F89C29F6C52600D958D1 /* L1+R.json */; };
 		FE4E7A4429C4B2AD00325835 /* WatchtowerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4E7A4329C4B2AD00325835 /* WatchtowerApp.swift */; };
 		FE4E7A4829C4B2AE00325835 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE4E7A4729C4B2AE00325835 /* Assets.xcassets */; };
 		FE4E7A4B29C4B2AE00325835 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE4E7A4A29C4B2AE00325835 /* Preview Assets.xcassets */; };
+		FE85105C2A799F6D000FC44C /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE85105B2A799F6D000FC44C /* AppCoordinator.swift */; };
 		FE8FB8B029EC1F720029A9DA /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8FB8AF29EC1F720029A9DA /* LoginViewModel.swift */; };
 		FE8FB8B229EC31C50029A9DA /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8FB8B129EC31C50029A9DA /* StorageService.swift */; };
 		FE8FB8B629EC35470029A9DA /* Watchtower.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FE8FB8B429EC35470029A9DA /* Watchtower.xcdatamodeld */; };
@@ -19,11 +32,6 @@
 		FE8FB8C029EC3B180029A9DA /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8FB8BF29EC3B180029A9DA /* NSObject.swift */; };
 		FE8FB8C429ED63600029A9DA /* NewProjectViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8FB8C329ED63600029A9DA /* NewProjectViewModel.swift */; };
 		FE8FB8C629ED6DF00029A9DA /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8FB8C529ED6DF00029A9DA /* DashboardViewModel.swift */; };
-		FE8FB8C829ED72EB0029A9DA /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8FB8C729ED72EB0029A9DA /* Project.swift */; };
-		FE8FB8CF29ED79110029A9DA /* L2+R.json in Resources */ = {isa = PBXBuildFile; fileRef = FE8FB8CB29ED79110029A9DA /* L2+R.json */; };
-		FE8FB8D029ED79110029A9DA /* L1+R.json in Resources */ = {isa = PBXBuildFile; fileRef = FE8FB8CC29ED79110029A9DA /* L1+R.json */; };
-		FE8FB8D129ED79110029A9DA /* L1.json in Resources */ = {isa = PBXBuildFile; fileRef = FE8FB8CD29ED79110029A9DA /* L1.json */; };
-		FE8FB8D229ED79110029A9DA /* L2.json in Resources */ = {isa = PBXBuildFile; fileRef = FE8FB8CE29ED79110029A9DA /* L2.json */; };
 		FE9B8AAF29CC86670084BD24 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9B8AAE29CC86670084BD24 /* LoginView.swift */; };
 		FE9B8AB729CCC1830084BD24 /* PrimaryActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9B8AB629CCC1830084BD24 /* PrimaryActionButton.swift */; };
 		FE9B8ABC29CCC52F0084BD24 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9B8ABB29CCC52F0084BD24 /* Color.swift */; };
@@ -54,10 +62,24 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FE03152A2A79BDDE00633D91 /* Project+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Project+CoreDataClass.swift"; path = "Watchtower/Models/Project/Project+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		FE03152B2A79BDDE00633D91 /* Project+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Project+CoreDataProperties.swift"; path = "Watchtower/Models/Project/Project+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		FE0315772A86A10F00633D91 /* LoginRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRoute.swift; sourceTree = "<group>"; };
+		FE0315792A86A14000633D91 /* DashboardRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardRoute.swift; sourceTree = "<group>"; };
+		FE1A2AA32A8E856C009A44DC /* ProjectRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectRoute.swift; sourceTree = "<group>"; };
+		FE1A2AA52A8EBF02009A44DC /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		FE1A2AA72A8EBF0B009A44DC /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		FE1A2AA92A8EBF13009A44DC /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		FE1A2AAB2A8EBFA7009A44DC /* Flow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flow.swift; sourceTree = "<group>"; };
+		FE27F89A29F6C52600D958D1 /* L2+R.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "L2+R.json"; sourceTree = "<group>"; };
+		FE27F89B29F6C52600D958D1 /* L1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = L1.json; sourceTree = "<group>"; };
+		FE27F89C29F6C52600D958D1 /* L1+R.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "L1+R.json"; sourceTree = "<group>"; };
+		FE27F8A029F6C55000D958D1 /* L2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = L2.json; sourceTree = "<group>"; };
 		FE4E7A4029C4B2AD00325835 /* Watchtower.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Watchtower.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE4E7A4329C4B2AD00325835 /* WatchtowerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchtowerApp.swift; sourceTree = "<group>"; };
 		FE4E7A4729C4B2AE00325835 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE4E7A4A29C4B2AE00325835 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FE85105B2A799F6D000FC44C /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		FE8FB8AF29EC1F720029A9DA /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		FE8FB8B129EC31C50029A9DA /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
 		FE8FB8B529EC35470029A9DA /* Watchtower.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Watchtower.xcdatamodel; sourceTree = "<group>"; };
@@ -67,11 +89,6 @@
 		FE8FB8BF29EC3B180029A9DA /* NSObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObject.swift; sourceTree = "<group>"; };
 		FE8FB8C329ED63600029A9DA /* NewProjectViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewProjectViewModel.swift; sourceTree = "<group>"; };
 		FE8FB8C529ED6DF00029A9DA /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
-		FE8FB8C729ED72EB0029A9DA /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
-		FE8FB8CB29ED79110029A9DA /* L2+R.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "L2+R.json"; path = "../../../../../../Desktop/L2+R.json"; sourceTree = "<group>"; };
-		FE8FB8CC29ED79110029A9DA /* L1+R.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "L1+R.json"; path = "../../../../../../Desktop/L1+R.json"; sourceTree = "<group>"; };
-		FE8FB8CD29ED79110029A9DA /* L1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = L1.json; path = ../../../../../../Desktop/L1.json; sourceTree = "<group>"; };
-		FE8FB8CE29ED79110029A9DA /* L2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = L2.json; path = ../../../../../../Desktop/L2.json; sourceTree = "<group>"; };
 		FE9B8AAE29CC86670084BD24 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		FE9B8AB629CCC1830084BD24 /* PrimaryActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryActionButton.swift; sourceTree = "<group>"; };
 		FE9B8ABB29CCC52F0084BD24 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
@@ -112,6 +129,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FE03152E2A79C0E800633D91 /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				FE03152A2A79BDDE00633D91 /* Project+CoreDataClass.swift */,
+				FE03152B2A79BDDE00633D91 /* Project+CoreDataProperties.swift */,
+			);
+			path = Project;
+			sourceTree = "<group>";
+		};
+		FE0315702A86A04500633D91 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				FE1A2AAB2A8EBFA7009A44DC /* Flow.swift */,
+				FE1A2AA52A8EBF02009A44DC /* Coordinator.swift */,
+				FE1A2AA92A8EBF13009A44DC /* Route.swift */,
+				FE1A2AA72A8EBF0B009A44DC /* Presenter.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		FE1A2AA02A8D7112009A44DC /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
 		FE4E7A3729C4B2AD00325835 = {
 			isa = PBXGroup;
 			children = (
@@ -162,6 +206,7 @@
 		FE8FB8C129EC3B300029A9DA /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				FE0315702A86A04500633D91 /* Coordinator */,
 				FE8FB8BA29EC37E60029A9DA /* ActiveRecord.swift */,
 			);
 			path = Protocols;
@@ -190,10 +235,10 @@
 		FE8FB8CA29ED78FF0029A9DA /* VerificationLevels */ = {
 			isa = PBXGroup;
 			children = (
-				FE8FB8CD29ED79110029A9DA /* L1.json */,
-				FE8FB8CC29ED79110029A9DA /* L1+R.json */,
-				FE8FB8CE29ED79110029A9DA /* L2.json */,
-				FE8FB8CB29ED79110029A9DA /* L2+R.json */,
+				FE27F89B29F6C52600D958D1 /* L1.json */,
+				FE27F89C29F6C52600D958D1 /* L1+R.json */,
+				FE27F8A029F6C55000D958D1 /* L2.json */,
+				FE27F89A29F6C52600D958D1 /* L2+R.json */,
 			);
 			path = VerificationLevels;
 			sourceTree = "<group>";
@@ -202,6 +247,7 @@
 			isa = PBXGroup;
 			children = (
 				FE4E7A4329C4B2AD00325835 /* WatchtowerApp.swift */,
+				FE85105B2A799F6D000FC44C /* AppCoordinator.swift */,
 				FEFF7A2D29E201C100913B92 /* AppState.swift */,
 			);
 			path = App;
@@ -224,6 +270,7 @@
 			isa = PBXGroup;
 			children = (
 				FE9B8AC229CCCC270084BD24 /* View */,
+				FE0315772A86A10F00633D91 /* LoginRoute.swift */,
 				FE8FB8AF29EC1F720029A9DA /* LoginViewModel.swift */,
 			);
 			path = Login;
@@ -232,6 +279,7 @@
 		FE9B8AB429CCC1680084BD24 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				FE1A2AA02A8D7112009A44DC /* Modifiers */,
 				FE8FB8C129EC3B300029A9DA /* Protocols */,
 				FE9B8AB829CCC4450084BD24 /* Extensions */,
 				FE9B8AB529CCC16E0084BD24 /* UIComponents */,
@@ -290,10 +338,10 @@
 		FEFF7A2F29E201E900913B92 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				FE03152E2A79C0E800633D91 /* Project */,
 				FE8FB8C229EC453F0029A9DA /* Checklist */,
 				FEFF7A3029E201F100913B92 /* Session.swift */,
 				FEFF7A3F29E302D900913B92 /* VerificationLevel.swift */,
-				FE8FB8C729ED72EB0029A9DA /* Project.swift */,
 				FE8FB8B429EC35470029A9DA /* Watchtower.xcdatamodeld */,
 			);
 			path = Models;
@@ -303,6 +351,7 @@
 			isa = PBXGroup;
 			children = (
 				FEFF7A3329E2042C00913B92 /* View */,
+				FE0315792A86A14000633D91 /* DashboardRoute.swift */,
 				FE8FB8C529ED6DF00029A9DA /* DashboardViewModel.swift */,
 			);
 			path = Dashboard;
@@ -398,6 +447,7 @@
 			isa = PBXGroup;
 			children = (
 				FEFF7A5E29E35F7700913B92 /* View */,
+				FE1A2AA32A8E856C009A44DC /* ProjectRoute.swift */,
 			);
 			path = Project;
 			sourceTree = "<group>";
@@ -478,12 +528,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE27F89D29F6C52600D958D1 /* L2+R.json in Resources */,
 				FE4E7A4B29C4B2AE00325835 /* Preview Assets.xcassets in Resources */,
-				FE8FB8CF29ED79110029A9DA /* L2+R.json in Resources */,
-				FE8FB8D129ED79110029A9DA /* L1.json in Resources */,
-				FE8FB8D229ED79110029A9DA /* L2.json in Resources */,
+				FE27F89E29F6C52600D958D1 /* L1.json in Resources */,
 				FE4E7A4829C4B2AE00325835 /* Assets.xcassets in Resources */,
-				FE8FB8D029ED79110029A9DA /* L1+R.json in Resources */,
+				FE27F89F29F6C52600D958D1 /* L1+R.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,6 +541,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		FE9B8ACB29D094FA0084BD24 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
@@ -520,16 +570,21 @@
 				FE9B8ABC29CCC52F0084BD24 /* Color.swift in Sources */,
 				FEFF7A3C29E2398200913B92 /* AppCardView.swift in Sources */,
 				FEFF7A3E29E23D7D00913B92 /* PercentView.swift in Sources */,
+				FE1A2AAC2A8EBFA7009A44DC /* Flow.swift in Sources */,
 				FE8FB8BB29EC37E60029A9DA /* ActiveRecord.swift in Sources */,
 				FE8FB8B829EC36A00029A9DA /* CoreDataStack.swift in Sources */,
 				FE9B8AAF29CC86670084BD24 /* LoginView.swift in Sources */,
+				FE03152D2A79BDDE00633D91 /* Project+CoreDataProperties.swift in Sources */,
+				FE03152C2A79BDDE00633D91 /* Project+CoreDataClass.swift in Sources */,
 				FEFF7A5329E3422F00913B92 /* RequirementView.swift in Sources */,
 				FE8FB8B029EC1F720029A9DA /* LoginViewModel.swift in Sources */,
 				FE8FB8C629ED6DF00029A9DA /* DashboardViewModel.swift in Sources */,
 				FEFF7A4629E30D5300913B92 /* NewProjectView.swift in Sources */,
 				FEFF7A4B29E3108700913B92 /* VerificationLevelView.swift in Sources */,
 				FEFF7A3929E2045500913B92 /* InfoView.swift in Sources */,
+				FE85105C2A799F6D000FC44C /* AppCoordinator.swift in Sources */,
 				FEFF7A4D29E310CF00913B92 /* VerificationLevelStackView.swift in Sources */,
+				FE1A2AAA2A8EBF13009A44DC /* Route.swift in Sources */,
 				FEFF7A6029E35F8B00913B92 /* ProjectView.swift in Sources */,
 				FE9B8ACE29D099110084BD24 /* KeysService.swift in Sources */,
 				FE8FB8BE29EC38840029A9DA /* CoreDataModel.swift in Sources */,
@@ -539,17 +594,21 @@
 				FEFF7A2E29E201C100913B92 /* AppState.swift in Sources */,
 				FEFF7A5529E3425E00913B92 /* Requirement.swift in Sources */,
 				FEFF7A6529E3639800913B92 /* CheckBoxToggleStyle.swift in Sources */,
-				FE8FB8C829ED72EB0029A9DA /* Project.swift in Sources */,
 				FEFF7A6329E360FA00913B92 /* RequirementRowView.swift in Sources */,
 				FE8FB8C429ED63600029A9DA /* NewProjectViewModel.swift in Sources */,
 				FEFF7A4829E30DC500913B92 /* LabeledTextField.swift in Sources */,
 				FE8FB8B629EC35470029A9DA /* Watchtower.xcdatamodeld in Sources */,
+				FE1A2AA42A8E856C009A44DC /* ProjectRoute.swift in Sources */,
 				FEFF7A5729E347F300913B92 /* Verification.swift in Sources */,
 				FEFF7A5C29E3581900913B92 /* LinkButtonView.swift in Sources */,
 				FE9B8AC829CCCD190084BD24 /* SecondaryActionButton.swift in Sources */,
 				FEFF7A3129E201F100913B92 /* Session.swift in Sources */,
 				FE9B8AC429CCCC370084BD24 /* BackgroundCastleView.swift in Sources */,
+				FE1A2AA62A8EBF02009A44DC /* Coordinator.swift in Sources */,
 				FE4E7A4429C4B2AD00325835 /* WatchtowerApp.swift in Sources */,
+				FE0315782A86A10F00633D91 /* LoginRoute.swift in Sources */,
+				FE03157A2A86A14000633D91 /* DashboardRoute.swift in Sources */,
+				FE1A2AA82A8EBF0B009A44DC /* Presenter.swift in Sources */,
 				FEFF7A6729E36B7D00913B92 /* Checklist.swift in Sources */,
 				FE9B8AB729CCC1830084BD24 /* PrimaryActionButton.swift in Sources */,
 			);

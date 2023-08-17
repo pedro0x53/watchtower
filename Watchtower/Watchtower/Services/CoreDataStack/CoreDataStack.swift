@@ -38,4 +38,13 @@ class CoreDataStack {
         }
     }
 
+    func createProject(named name: String, id: String, ownerID: String, level: Int16) {
+        let checklist = Project(context: self.mainContext)
+        checklist.identifier = id
+        checklist.name = name
+        checklist.ownerID = ownerID
+        checklist.rawLevel = level
+
+        self.saveContext()
+    }
 }

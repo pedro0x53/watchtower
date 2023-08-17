@@ -10,55 +10,51 @@ import AuthenticationServices
 
 struct LoginView<ViewModel>: View where ViewModel: LoginViewModelTemplate {
     @ObservedObject var viewModel: ViewModel
+    @ObservedObject var router: LoginRoute
 
     @State private var shouldShowInfo: Bool = false
 
     var body: some View {
-        NavigationStack {
-            ZStack {
-                BackgroundCastleView()
+        ZStack {
+            BackgroundCastleView()
 
-                VStack {
-                    Spacer()
+            VStack {
+                Spacer()
 
-                    LogoView()
+                LogoView()
 
-                    Spacer()
+                Spacer()
 
-                    NavigationLink {
-                        DashboardView(viewModel: DashboardViewModel(store: StorageService(),
-                                                                    stack: CoreDataStack.shared))
-                            .onAppear {
-                                viewModel.startNewSession()
-                            }
-                    } label: {
-                        Text("Iniciar Sessão Local")
-                            .bold()
-                            .padding(4)
-                            .frame(maxWidth: .infinity)
-                    }
-                    .buttonStyle(.borderedProminent)
-
-                    Spacer()
-
-                    SecondaryActionButton("O que é a Sessão Local?") {
-                        shouldShowInfo = true
-                    }
-                    .sheet(isPresented: $shouldShowInfo, content: {
-                        InfoView()
-                            .presentationDetents([.fraction(2/5)])
-                            .presentationDragIndicator(.visible)
-                    })
+                Button {
+                    router.push(to: .dashboard)
+                } label: {
+                    Text("Iniciar Sessão Local")
+                        .bold()
+                        .padding(4)
+                        .frame(maxWidth: .infinity)
                 }
+                .buttonStyle(.borderedProminent)
+
+                Spacer()
+
+                SecondaryActionButton("O que é a Sessão Local?") {
+                    router.isPresentingInfo = true
+                }
+                .sheet(isPresented: $router.isPresentingInfo, content: {
+                    router.present(sheet: .info)
+                })
             }
-            .padding()
         }
+        .padding()
     }
 }
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView(viewModel: LoginViewModel())
-            .tint(.flame)
+        LoginView(
+            viewModel: LoginViewModel(),
+            router: .init(coordinator: AppCoordinator(isLoggedIn: true))
+        )
+        .tint(.flame)
     }
 }

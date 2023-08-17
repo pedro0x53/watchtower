@@ -14,10 +14,14 @@ class KeysService {
     }
 
     static func get(_ key: KeysService.Keys) -> Any? {
-        return UserDefaults.standard.value(forKey: key.rawValue)
+        UserDefaults.standard.value(forKey: key.rawValue)
     }
 
     static func set(_ value: Any?, for key: KeysService.Keys) {
         UserDefaults.standard.set(value, forKey: key.rawValue)
+    }
+
+    static func has(key: KeysService.Keys) -> Bool {
+        UserDefaults.standard.value(forKey: key.rawValue) != nil
     }
 }
