@@ -35,19 +35,11 @@ class AppCoordinator: Coordinator {
     }
 
     private func buildLogin() -> some View {
-        LoginView(viewModel: LoginViewModel(),
-                  router: .init(coordinator: self))
-        .navigationDestination(for: DashboardRoute.self) { route in
-            route.build()
-        }
+        LoginRoute(coordinator: self).build()
     }
 
     private func buildDashboard() -> some View {
-        DashboardView(viewModel: DashboardViewModel(store: .init(), stack: .shared),
-                      router: .init(coordinator: self))
-        .navigationDestination(for: ProjectRoute.self) { route in
-            route.build()
-        }
+        DashboardRoute(coordinator: self).build()
     }
 }
 
